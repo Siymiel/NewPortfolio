@@ -22,10 +22,10 @@
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div class="md:flex items-center">
                 <div class="flex flex-col md:flex-row md:mx-6">
+                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/">Home</a></a>
                     <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#">About</a>
-                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#">Portfolio</a>
-                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#">Blog</a>
-                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#">Contact</a>
+                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#">Services</a>
+                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/contact">Contact</a>
                 </div>
             </div>
         </div>

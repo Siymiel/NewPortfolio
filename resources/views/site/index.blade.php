@@ -9,7 +9,7 @@
             <div class="px-5">
                 <p class="text-xl font-semibold tracking-wide">Hi! I'am <span class="text-red-400">Samuel Kinuthia</span> and</p>
                 <h1 class="text-4xl lg:text-6xl font-black capitalize tracking-wider leading-relaxed mt-3">I'll help you build</h1>
-                <h1 class="text-4xl lg:text-6xl font-black capitalize tracking-wider">your website</h1>
+                <h1 class="text-4xl lg:text-6xl font-black capitalize tracking-wider">your website.</h1>
                 <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.</p>
                 <p class="text-base md:text-lg text-red-400 font-semibold mt-5 border-b-2 border-red-400">
                     Connect with me! --->
@@ -50,7 +50,7 @@
             </svg>
         </div>
         <div class="px-5">
-            <h1 class="text-4xl lg:text-6xl font-black capitalize tracking-wider leading-relaxed mt-3">About me</h1>
+            <h1 class="text-4xl lg:text-5xl font-black capitalize tracking-wider leading-relaxed mt-3">About <span class="text-4xl">me<span></h1>
             <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I am Professional Web Designer and Developer. I build backend services (APIs) with a focus on high availability, a low latency, and scalability. My core language is PHP-Laravel.</p>
              <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I'm the co-founder of <span class="text-black">Snobole Software</span> where I work as a technical lead but am still open to opportunities.</p>
             <p class="text-base md:text-lg text-red-400 font-semibold mt-5 border-b-2 border-red-400">
@@ -77,7 +77,7 @@
                 </svg>
             </div>
             <div class="ml-3">
-                <p class="text-3xl tracking-wide font-semibold leading-relaxed">Services I Offer</p>
+                <p class="text-3xl tracking-wide font-semibold leading-relaxed">My <span class="text-5xl">Services<span></p>
                 <p class="text-xl text-gray-500 tracking-wide font-semibold leading-relaxed mt-2">My main objective is when you as the client walks away, you're thinking, 'Wow, I love doing business with Sam, and I want to tell others about the experience'.</p>
             </div>
         </div>
@@ -114,51 +114,39 @@
     <section class="max-w-md lg:max-w-5xl mx-auto mt-36">
         <div class="flex justify-between">
             <div>
-                <p class="text-3xl tracking-wide font-semibold leading-relaxed">Products I've build and</p>
-                <p class="text-3xl tracking-wide font-semibold leading-relaxed">and businesses I've collaborated with</p>
+                <p class="text-3xl tracking-wide font-semibold leading-relaxed"><span class="text-5xl">Products</span> I've build and</p>
+                <p class="text-3xl tracking-wide font-semibold leading-relaxed">businesses I've collaborated with.</p>
             </div>
             <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="67.224" height="58" viewBox="0 0 67.224 58">
-  <g id="Group_8" data-name="Group 8" transform="translate(-284 -341.794)">
-    <g id="Group_7" data-name="Group 7" transform="translate(284 342)">
-      <g id="Group_6" data-name="Group 6" transform="translate(0 0)">
-        <g id="Group_5" data-name="Group 5" transform="translate(0 0)">
-          <g id="Group_4" data-name="Group 4" transform="translate(0)">
-            <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
-              <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
-                <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(0 -0.206)" fill="rgba(232,231,231,0.93)" stroke="rgba(178,185,180,0.88)" stroke-width="1">
-                  <circle cx="26" cy="26" r="26" stroke="none"/>
-                  <circle cx="26" cy="26" r="25.5" fill="none"/>
-                </g>
-              </g>
-            </g>
-          </g>
-          <circle id="Ellipse_3" data-name="Ellipse 3" cx="7.5" cy="7.5" r="7.5" transform="translate(24 21.794)" fill="rgba(203,44,44,0.7)"/>
-          <line id="Line_1" data-name="Line 1" x2="23.251" transform="translate(0.882 19.483)" fill="none" stroke="rgba(88,87,87,0.69)" stroke-width="1"/>
-          <line id="Line_2" data-name="Line 2" x2="20.846" transform="translate(30.868 28.944)" fill="none" stroke="rgba(175,34,34,0.76)" stroke-width="1"/>
-          <line id="Line_3" data-name="Line 3" x2="6.735" y2="9.461" transform="translate(24.133 19.483)" fill="none" stroke="#b1acac" stroke-width="1"/>
-        </g>
-      </g>
-    </g>
-    <g id="Group_9" data-name="Group 9" transform="translate(295.866 349.376)">
-      <circle id="Ellipse_2" data-name="Ellipse 2" cx="12" cy="12" r="12" transform="translate(0.134 0.418)" fill="rgba(64,52,52,0.76)"/>
-      <circle id="Ellipse_4" data-name="Ellipse 4" cx="0.5" cy="0.5" r="0.5" transform="translate(11.134 11.418)" fill="#fff"/>
-    </g>
-    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="0.5" cy="1" rx="0.5" ry="1" transform="translate(314 369.794)" fill="#fff"/>
-  </g>
-</svg>
-
-                {{-- <svg xmlns="http://www.w3.org/2000/svg" width="67.224" height="58" viewBox="0 0 67.224 58">
-                <g id="Group_1" data-name="Group 1" transform="translate(-344.5 -148.998)">
-                    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(346 148.998)" fill="#f6f6f6" stroke="rgba(154,165,157,0.88)" stroke-width="1">
-                    <circle cx="29" cy="29" r="29" stroke="none"/>
-                    <circle cx="29" cy="29" r="28.5" fill="none"/>
+                <g id="Group_8" data-name="Group 8" transform="translate(-284 -341.794)">
+                    <g id="Group_7" data-name="Group 7" transform="translate(284 342)">
+                    <g id="Group_6" data-name="Group 6" transform="translate(0 0)">
+                        <g id="Group_5" data-name="Group 5" transform="translate(0 0)">
+                        <g id="Group_4" data-name="Group 4" transform="translate(0)">
+                            <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+                            <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
+                                <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(0 -0.206)" fill="rgba(232,231,231,0.93)" stroke="rgba(178,185,180,0.88)" stroke-width="1">
+                                <circle cx="26" cy="26" r="26" stroke="none"/>
+                                <circle cx="26" cy="26" r="25.5" fill="none"/>
+                                </g>
+                            </g>
+                            </g>
+                        </g>
+                        <circle id="Ellipse_3" data-name="Ellipse 3" cx="7.5" cy="7.5" r="7.5" transform="translate(24 21.794)" fill="rgba(203,44,44,0.7)"/>
+                        <line id="Line_1" data-name="Line 1" x2="23.251" transform="translate(0.882 19.483)" fill="none" stroke="rgba(88,87,87,0.69)" stroke-width="1"/>
+                        <line id="Line_2" data-name="Line 2" x2="20.846" transform="translate(30.868 28.944)" fill="none" stroke="rgba(175,34,34,0.76)" stroke-width="1"/>
+                        <line id="Line_3" data-name="Line 3" x2="6.735" y2="9.461" transform="translate(24.133 19.483)" fill="none" stroke="#b1acac" stroke-width="1"/>
+                        </g>
                     </g>
-                    <line id="Line_1" data-name="Line 1" x2="67.224" transform="translate(344.5 192.267)" fill="none" stroke="#aeb6f9" stroke-width="1"/>
-                    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="15.5" cy="15" rx="15.5" ry="15" transform="translate(350 161.998)" fill="rgba(21,20,22,0.71)"/>
-                    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(369 157.998)" fill="rgba(203,47,47,0.84)"/>
+                    </g>
+                    <g id="Group_9" data-name="Group 9" transform="translate(295.866 349.376)">
+                    <circle id="Ellipse_2" data-name="Ellipse 2" cx="12" cy="12" r="12" transform="translate(0.134 0.418)" fill="rgba(64,52,52,0.76)"/>
+                    <circle id="Ellipse_4" data-name="Ellipse 4" cx="0.5" cy="0.5" r="0.5" transform="translate(11.134 11.418)" fill="#fff"/>
+                    </g>
+                    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="0.5" cy="1" rx="0.5" ry="1" transform="translate(314 369.794)" fill="#fff"/>
                 </g>
-                </svg> --}}
+            </svg>
             </div>
         </div>
     </section>
@@ -217,7 +205,7 @@
     <section class="max-w-md lg:max-w-6xl mx-auto mt-36">
     <div class="flex justify-between">
         <div>
-            <p class="text-3xl tracking-wide font-semibold leading-relaxed">What clients say</p>
+            <p class="text-3xl tracking-wide font-semibold leading-relaxed">What <span class="text-5xl">Clients</span> say</p>
         </div>
         <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">

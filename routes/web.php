@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('site.index');
 });
 
+Route::get('/contact', function () {
+    return view('site.contact');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
