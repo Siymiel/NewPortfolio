@@ -1,10 +1,10 @@
-<footer class="relative pt-8 bg-gray-900 pb-6 mt-48">
+<footer class="relative pt-8 bg-gray-900 pb-6 mt-20">
     <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height:80px;transform:translateZ(0)">
         <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
             <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
         </svg>
     </div>
-    <div class="container mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-wrap">
             <div class="w-full md:w-6/12 px-4">
                 <h4 class="text-2xl font-semibold text-gray-300">Let&#x27;s keep in touch!</h4>
@@ -40,10 +40,10 @@
                     <div class="flex flex-wrap items-top mb-6">
                         <div class="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
                             <div class="flex space-x-1">
-                                <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Link" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-                                    <path fill="#008080" d="M7.859,14.691l-0.81,0.805c-0.701,0.695-1.843,0.695-2.545,0c-0.336-0.334-0.521-0.779-0.521-1.252  s0.186-0.916,0.521-1.252l2.98-2.955c0.617-0.613,1.779-1.515,2.626-0.675c0.389,0.386,1.016,0.384,1.403-0.005  c0.385-0.389,0.383-1.017-0.006-1.402C10.069,6.527,7.941,6.791,6.088,8.63l-2.98,2.956C2.393,12.295,2,13.24,2,14.244  c0,1.006,0.394,1.949,1.108,2.658c0.736,0.73,1.702,1.096,2.669,1.096s1.934-0.365,2.669-1.096l0.811-0.805  c0.389-0.385,0.391-1.012,0.005-1.4C8.875,14.309,8.248,14.307,7.859,14.691z M16.891,3.207c-1.547-1.534-3.709-1.617-5.139-0.197  l-1.009,1.002c-0.389,0.386-0.392,1.013-0.006,1.401c0.386,0.389,1.013,0.391,1.402,0.005l1.01-1.001  c0.74-0.736,1.711-0.431,2.346,0.197c0.336,0.335,0.522,0.779,0.522,1.252s-0.186,0.917-0.522,1.251l-3.18,3.154  c-1.454,1.441-2.136,0.766-2.427,0.477c-0.389-0.386-1.016-0.383-1.401,0.005c-0.386,0.389-0.384,1.017,0.005,1.401  c0.668,0.662,1.43,0.99,2.228,0.99c0.977,0,2.01-0.492,2.993-1.467l3.18-3.153C17.605,7.814,18,6.87,18,5.866  C18,4.861,17.605,3.917,16.891,3.207z"/>
-                                </svg>
-                                <span class="block uppercase text-gray-200 text-sm font-semibold mb-2">Quick Links</span>
+                               <svg class="text-gray-300 fill-current" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M7.859 14.691l-.81.805a1.814 1.814 0 01-2.545 0 1.762 1.762 0 010-2.504l2.98-2.955c.617-.613 1.779-1.515 2.626-.675a.992.992 0 101.397-1.407c-1.438-1.428-3.566-1.164-5.419.675l-2.98 2.956A3.719 3.719 0 002 14.244a3.72 3.72 0 001.108 2.658c.736.73 1.702 1.096 2.669 1.096s1.934-.365 2.669-1.096l.811-.805a.988.988 0 00.005-1.4.995.995 0 00-1.403-.006zm9.032-11.484c-1.547-1.534-3.709-1.617-5.139-.197l-1.009 1.002a.99.99 0 101.396 1.406l1.01-1.001c.74-.736 1.711-.431 2.346.197.336.335.522.779.522 1.252s-.186.917-.522 1.251l-3.18 3.154c-1.454 1.441-2.136.766-2.427.477a.99.99 0 10-1.396 1.406c.668.662 1.43.99 2.228.99.977 0 2.01-.492 2.993-1.467l3.18-3.153A3.732 3.732 0 0018 5.866a3.726 3.726 0 00-1.109-2.659z"/>
+                               </svg>
+                                <span class="block uppercase text-gray-300 text-sm font-semibold mb-2">Quick Links</span>
                             </div>
                                 <ul class="list-unstyled">
                                     <li><a class="text-gray-300 ml-6 hover:text-red-400 hover:underline font-semibold block pb-2 text-sm" href="#">About Me</a></li>
@@ -54,10 +54,10 @@
                         </div>
                         <div class="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
                             <div class="flex space-x-1">
-                                <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Briefcase" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-                                    <path fill="#008080" d="M9,10h2v2h9c0,0-0.149-4.459-0.2-5.854C19.75,4.82,19.275,4,17.8,4h-3.208  c-0.497-0.938-1.032-1.945-1.197-2.256C13.064,1.121,12.951,1,12.216,1H7.783C7.048,1,6.936,1.121,6.604,1.744  C6.439,2.055,5.904,3.062,5.408,4H2.199c-1.476,0-1.945,0.82-2,2.146C0.145,7.473,0,12,0,12h9V10z M7.649,2.916  C7.879,2.484,7.957,2.4,8.466,2.4h3.067c0.509,0,0.588,0.084,0.816,0.516c0.086,0.16,0.318,0.6,0.575,1.084h-5.85  C7.331,3.516,7.563,3.076,7.649,2.916z M11,15H9v-2H0.5c0,0,0.124,1.797,0.199,3.322C0.73,16.955,0.917,18,2.499,18H17.5  c1.582,0,1.765-1.047,1.8-1.678C19.387,14.754,19.5,13,19.5,13H11V15z"/>
-                                </svg>
-                                <span class="block uppercase text-gray-200 text-sm font-semibold mb-2">Other Resources</span>
+                               <svg class="text-gray-300 fill-current" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M9 10h2v2h9s-.149-4.459-.2-5.854C19.75 4.82 19.275 4 17.8 4h-3.208l-1.197-2.256C13.064 1.121 12.951 1 12.216 1H7.783c-.735 0-.847.121-1.179.744-.165.311-.7 1.318-1.196 2.256H2.199c-1.476 0-1.945.82-2 2.146C.145 7.473 0 12 0 12h9v-2zM7.649 2.916c.23-.432.308-.516.817-.516h3.067c.509 0 .588.084.816.516L12.924 4h-5.85l.575-1.084zM11 15H9v-2H.5s.124 1.797.199 3.322C.73 16.955.917 18 2.499 18H17.5c1.582 0 1.765-1.047 1.8-1.678.087-1.568.2-3.322.2-3.322H11v2z"/>
+                               </svg>
+                                <span class="block uppercase text-gray-300 text-sm font-semibold mb-2">Other Resources</span>
                             </div>
                                 <ul class="list-unstyled">
                                     <li><a class="text-gray-300 ml-6 hover:text-red-400 hover:underline font-semibold block pb-2 text-sm" href="#terms" target="_blank">Terms &amp; Conditions</a></li>
@@ -69,10 +69,11 @@
             </div>
             <hr class="my-6 border-gray-400"/>
             <div class="flex flex-wrap items-center md:justify-between justify-center">
-                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-                    <div class="text-sm text-gray-300 font-semibold py-1">Copyright © | Samuel Kinuthia <!-- -->@php echo date("Y"); @endphp<!-- --> | Portfolio Theme by<!-- --> Samuel Kinuthia.
+                <div class="w-full  px-4 mx-auto text-center">
+                    <div class="text-sm text-gray-300 font-semibold py-1">Copyright © | Samuel Kinuthia <!-- -->@php echo date("Y"); @endphp<!-- --> | Portfolio Website -<!-- --> Designed and Developed by Samuel Kinuthia.
                     </div>
                 </div>
             </div>
     </div>
     </footer>
+    {{-- md:w-4/12 --}}
