@@ -11,9 +11,11 @@
                 <h1 class="text-4xl lg:text-6xl font-black capitalize tracking-wider leading-relaxed mt-3">I'll help you build</h1>
                 <h1 class="text-4xl lg:text-6xl font-black capitalize tracking-wider">your website.</h1>
                 <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.</p>
-                <p class="text-base md:text-lg text-red-400 font-semibold mt-5 border-b-2 border-red-400">
-                    Connect with me! --->
-                </p>
+                <a href="/contact">
+                    <p class="text-base md:text-lg text-red-400 hover:text-gray-800 font-semibold mt-5 border-b-2 border-red-400">
+                        Connect with me! --->
+                    </p>
+                </a>
             </div>
         </div>
     </section>
@@ -27,7 +29,7 @@
     </div>
 
     {{-- About me --}}
-     <section class="max-w-md lg:max-w-6xl mx-auto mt-32">
+     <section id="about" class="max-w-md lg:max-w-6xl mx-auto mt-32">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
          <div class="flex justify-center py-5">
             <svg class="h-72 w-72 md:h-80 md:w-80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335 404">
@@ -53,15 +55,17 @@
             <h1 class="text-4xl lg:text-5xl font-black capitalize tracking-wider leading-relaxed mt-3">About <span class="text-4xl">me<span></h1>
             <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I am Professional Web Designer and Developer. I build backend services (APIs) with a focus on high availability, a low latency, and scalability. My core language is PHP-Laravel.</p>
              <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I'm the co-founder of <span class="text-black">Snobole Software</span> where I work as a technical lead but am still open to opportunities.</p>
-            <p class="text-base md:text-lg text-red-400 font-semibold mt-5 border-b-2 border-red-400">
-                Hire me! --->
-            </p>
+             <a href="/contact">
+                <p class="text-base md:text-lg hover:text-gray-800 text-red-400 font-semibold mt-5 border-b-2 border-red-400">
+                    Hire me! --->
+                </p>
+            </a>
         </div>
         </div>
     </section>
 
     {{-- Services --}}
-     <section class="max-w-md lg:max-w-5xl mx-auto mt-36">
+     <section id="services" class="max-w-md lg:max-w-5xl mx-auto mt-36">
         <div class="flex justify-between">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="67.224" height="58" viewBox="0 0 67.224 58">
