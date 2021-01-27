@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\Dashboard\DashhomeController;
+use App\Http\Controllers\Dashboard\ProjectController;
 use App\Http\Controllers\Dashboard\ServiceController;
+use App\Http\Controllers\Dashboard\ClientController;
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,13 +18,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('site.index');
-});
 
 Route::get('/contact', function () {
     return view('site.contact');
 });
+
+// Site
+Route::get('/', [SiteController::class, 'index'])->name('home');
 
 // Dashboard
 Route::get('/dashboard', function () {
@@ -34,5 +37,7 @@ Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.', 'middleware' => ['a
     Route::get('/', [DashhomeController::class, 'index'])->name('index');
     Route::resources([
         'services' => ServiceController::class,
+        'projects' => ProjectController::class,
+        'clients' => ClientController::class,
     ]);
 });

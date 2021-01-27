@@ -18,7 +18,7 @@
     </head>
     <body class="font-sans antialiased" x-data="{ isSideMenuOpen: false, isNotificationsMenuOpen: false, isProfileMenuOpen: false, toggleNotificationsMenu: true }">
         <div class="min-h-screen bg-gray-100">
-
+            <x-dashboard.flashmsg/>
             <!-- Page Content -->
             <main>
                 {{ $slot }}
