@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Dashboard\DashhomeController;
+use App\Http\Controllers\Dashboard\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,8 +23,16 @@ Route::get('/contact', function () {
     return view('site.contact');
 });
 
+// Dashboard
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.', 'middleware' => ['auth']], function () {
+    Route::get('/', [DashhomeController::class, 'index'])->name('index');
+    Route::resources([
+        'services' => ServiceController::class,
+    ]);
+});
