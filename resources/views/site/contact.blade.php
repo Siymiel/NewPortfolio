@@ -41,48 +41,65 @@
 
                 <p class="text-gray-400 text-xs font-semibold mt-14 mb-5">View job opening</p>
             </div>
-            <form class="px-10 border-2 border-gray-200">
+            <form action="{{route('storeContact')}}" method="POST" class="px-10 border-2 border-gray-200">
                 <h1 class="font-bold text-4xl mb-7 mt-10">Enter Details</h1>
                 <div class="grid grid-cols-2 gap-8">
+                  {{-- full_name --}}
                     <div>
-                        <div>
-                            <label for="fullname" class="block text-base font-semibold text-gray-700">Full Name</label>
-                            <div class="mt-1 rounded-md shadow-sm">
-                              <input type="text" name="fullname" id="fullname" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md">
-                            </div>
-                          </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div>
-                                <label for="email" class="block text-base font-semibold text-gray-700">Email</label>
-                                <div class="mt-1 rounded-md shadow-sm">
-                                  <input type="email" name="email" id="email" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md">
-                                </div>
-                              </div>
+                        @error('full_name')
+                          <span class="text-red-500 mt-2 text-xs font-mono">
+                              * {{$message}}
+                          </span>
+                        @enderror
+                        <label for="fullname" class="block text-base font-semibold text-gray-700">Full Name</label>
+                        <div class="mt-1 rounded-md shadow-sm">
+                          <input type="text" name="fullname" value="{{old('full_name')}}" id="fullname" class=" @error('full_name') border-red-500 @enderror focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm rounded-md">
                         </div>
                     </div>
-                </div>
-                <div>
+                    
+                    {{-- Email --}}                  
                     <div>
-                        <div>
-                            <label for="phonenumber" class="block text-base font-semibold text-gray-700 mt-4">Phone Number</label>
-                            <div class="mt-1 rounded-md shadow-sm">
-                              <input type="tel" name="phonenumber" id="phonenumber" class="focus:ring-indigo-500 focus:border-indigo-500 block w-1/2 pl-7 pr-12 sm:text-sm border-gray-300 rounded-md">
-                            </div>
+                      @error('email')
+                          <span class="text-red-500 mt-2 text-xs font-mono">
+                              * {{$message}}
+                          </span>
+                        @enderror
+                      <label for="email" class="block text-base font-semibold text-gray-700">Email</label>
+                        <div class="mt-1 rounded-md shadow-sm">
+                          <input type="email" name="email" value="{{old('email')}}" id="email" class=" @error('email') border-red-500 @enderror focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm rounded-md">
                           </div>
+                        </div>
+                    </div>
+                
+
+                    {{-- Phone_number --}}           
+                    <div>
+                      @error('phone_number')
+                          <span class="text-red-500 mt-2 text-xs font-mono">
+                              * {{$message}}
+                          </span>
+                        @enderror                    
+                      <label for="phonenumber" class="block text-base font-semibold text-gray-700 mt-4">Phone Number</label>
+                      <div class="mt-1 rounded-md shadow-sm">
+                        <input type="tel" name="phonenumber" value="{{old('phone_number')}}" id="phonenumber" class="  @error('phone_number') border-red-500 @enderror focus:ring-indigo-500 focus:border-indigo-500 block w-1/2 pl-7 pr-12 sm:text-sm rounded-md">
+                      </div>
+                    </div>
+                
+
+                    {{-- message --}}
+                    <div> 
+                      @error('message')
+                          <span class="text-red-500 mt-2 text-xs font-mono">
+                              * {{$message}}
+                          </span>
+                        @enderror                  
+                      <label for="message" class="block text-base font-semibold text-gray-700 mt-4">Message</label>
+                      <div class="mt-1 rounded-md shadow-sm">
+                        <textarea name="message" id="message" rows="5" class=" @error('message') border-red-500 @enderror focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm rounded-md">{{old('message')}}</textarea>                     
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <label for="message" class="block text-base font-semibold text-gray-700 mt-4">Message</label>
-                            <div class="mt-1 rounded-md shadow-sm">
-                              <textarea name="message" id="message" rows="5" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md"></textarea>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+
+                {{-- Submit btn --}}
                 <div class="mt-5 mb-5">
                     <div class="mt-1 rounded-md shadow-sm">
                         <button type="submit" class="bg-gray-800 text-gray-300 px-2 py-1 text-base font-semibold rounded-md">Submit</button>

@@ -4,7 +4,9 @@ use App\Http\Controllers\Dashboard\DashhomeController;
 use App\Http\Controllers\Dashboard\ProjectController;
 use App\Http\Controllers\Dashboard\ServiceController;
 use App\Http\Controllers\Dashboard\ClientController;
+use App\Http\Controllers\Dashboard\ContactController;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\AppcontactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +27,7 @@ Route::get('/contact', function () {
 
 // Site
 Route::get('/', [SiteController::class, 'index'])->name('home');
+Route::post('/contact', [AppContactController::class, 'storeContact'])->name('storeContact');
 
 // Dashboard
 Route::get('/dashboard', function () {
@@ -39,5 +42,6 @@ Route::group(['prefix' => 'dashboard', 'as' => 'dashboard.', 'middleware' => ['a
         'services' => ServiceController::class,
         'projects' => ProjectController::class,
         'clients' => ClientController::class,
+        'contacts' => ContactController::class,
     ]);
 });

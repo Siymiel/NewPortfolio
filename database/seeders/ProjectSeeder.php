@@ -21,6 +21,7 @@ class ProjectSeeder extends Seeder
                 'slug' => $title,
                 'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.',
                 'technology' => 'Laravel|Tailwind|SplideJs',
+                'link' => 'www.snobole.com',
                 'active' => 1,
 
             ],
@@ -29,6 +30,7 @@ class ProjectSeeder extends Seeder
                 'slug' => $title,
                 'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.',
                 'technology' => 'Laravel|Tailwind|SplideJs|AlpineJs',
+                'link' => 'www.snobole.com',
                 'active' => 1,
 
             ],
@@ -37,6 +39,7 @@ class ProjectSeeder extends Seeder
                 'slug' => $title,
                 'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.',
                 'technology' => 'Laravel|Tailwind|React|Redux',
+                'link' => 'www.snobole.com',
                 'active' => 1,
 
             ]

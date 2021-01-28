@@ -15,8 +15,8 @@
             <form method="POST" action="{{route('dashboard.projects.store')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="max-w-sm lg:max-w-4xl mx-auto mb-20">
+                    {{-- Project Title --}}
                     <div>
-                        {{-- Destination Title --}}
                         @error('title')
                             <span class="text-red-500 mt-2 text-xs font-mono">
                                 * {{$message}}
@@ -55,10 +55,26 @@
                         <x-label for="body">
                             <p class="font-semibold text-base leading-5 tracking-wider mb-2">Technology</p>
                             <div>
-                                <textarea id="technology" rows="10" name="technology" class="tiny-editor @error('technology') border-red-500 @enderror form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">{{old('technology')}}</textarea>
+                                <textarea id="technology" rows="2" name="technology" class="tiny-editor @error('technology') border-red-500 @enderror form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">{{old('technology')}}</textarea>
                             </div>
                         </x-label>
                     </div>
+
+                     {{-- Project Link --}}
+                     <div class="mt-8">
+                        @error('link')
+                            <span class="text-red-500 mt-2 text-xs font-mono">
+                                * {{$message}}
+                            </span>
+                        @enderror
+                        <x-label for="link">
+                            <p class="font-semibold text-base leading-5 tracking-wider mb-2">Link</p>
+                            <div>
+                                <input type="url" name="link" value="{{old('link')}}" autocomplete="off" class=" @error('link') border-red-500 @enderror form-input block w-full mt-1 text-base p-2 transition duration-150 ease-in-out focus:border-indigo-300 sm:text-sm sm:leading-5 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"/>
+                            </div>
+                        </x-label>
+                    </div>
+
 
                     {{-- Project Image --}}
                     <div class="mt-8">

@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $slug
  * @property string $body
  * @property string $technology
+ * @property string $link
  * @property boolean $active
  */
 
@@ -28,6 +29,7 @@ class Project extends SingleImage implements WithSlug
         'slug',
         'body',
         'technology',
+        'link',
         'active',
     ];
 

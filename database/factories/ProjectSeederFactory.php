@@ -26,6 +26,7 @@ class ProjectSeederFactory extends Factory
             'slug' => $title,
             'body' => $this->faker->paragraphs(3, true),
             'technology' => $this->faker->words(3, true),
+            'link' => $this->faker->url(),
             'active' => true,
         ];
     }

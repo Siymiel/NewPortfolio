@@ -56,7 +56,22 @@
                         <x-label for="body">
                             <p class="font-semibold text-base leading-5 tracking-wider mb-2">Technology</p>
                             <div>
-                                <textarea id="technology" rows="10" name="technology" class="tiny-editor @error('technology') border-red-500 @enderror form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">{{old('technology', $project->technology)}}</textarea>
+                                <textarea id="technology" rows="2" name="technology" class="tiny-editor @error('technology') border-red-500 @enderror form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">{{old('technology', $project->technology)}}</textarea>
+                            </div>
+                        </x-label>
+                    </div>
+
+                    {{-- Project Link --}}
+                     <div class="mt-8">
+                        @error('link')
+                            <span class="text-red-500 mt-2 text-xs font-mono">
+                                * {{$message}}
+                            </span>
+                        @enderror
+                        <x-label for="link">
+                            <p class="font-semibold text-base leading-5 tracking-wider mb-2">Link</p>
+                            <div>
+                                <input type="url" name="link" value="{{old('link', $project->link)}}" autocomplete="off" class=" @error('link') border-red-500 @enderror form-input block w-full mt-1 text-base p-2 transition duration-150 ease-in-out focus:border-indigo-300 sm:text-sm sm:leading-5 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"/>
                             </div>
                         </x-label>
                     </div>

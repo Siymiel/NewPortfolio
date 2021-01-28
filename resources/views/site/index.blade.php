@@ -139,7 +139,7 @@
                         <p class="mt-4 text-gray-500 font-semibold">{{$project->body}}</p>
                         <p class="mt-2 text-red-400 font-semibold">{{$project->technology}}</p>
                         <div class="mt-10">
-                            <a href="#" class="border-2 border-gray-800 text-gray-800 px-4 py-2 font-semibold rounded hover:text-gray-300 hover:bg-gray-800">Visit Site</a>
+                            <a href="{{$project->link}}" target="_blank" class="border-2 border-gray-800 text-gray-800 px-4 py-2 font-semibold rounded hover:text-gray-300 hover:bg-gray-800">Visit Site</a>
                         </div>
                     </div>
                 </div>
