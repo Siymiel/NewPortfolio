@@ -1,4 +1,4 @@
-<svg class="h-72 w-72 md:h-80 md:w-80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374 339">
+<svg class="h-64 w-64 md:h-72 md:w-72 lg:h-80 lg:w-80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374 339">
   <g id="Group_3" data-name="Group 3" transform="translate(-415 -124)">
     <g id="Path_1" data-name="Path 1" transform="translate(455 124)" fill="#ececec">
       <path d="M167,0c92.232,0,167,75.888,167,169.5S259.232,339,167,339,0,263.112,0,169.5,74.768,0,167,0Z" stroke="none"/>
