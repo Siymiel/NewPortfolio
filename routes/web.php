@@ -20,14 +20,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/contact', function () {
-    return view('site.contact');
-});
-
 // Site
 Route::get('/', [SiteController::class, 'index'])->name('home');
-Route::post('/contact', [AppContactController::class, 'storeContact'])->name('storeContact');
+Route::get('/contact', [SiteController::class, 'showContactPg'])->name('contact');
+Route::post('/contact-chat', [AppContactController::class, 'storeContact'])->name('contactstore');
 
 // Dashboard
 Route::get('/dashboard', function () {

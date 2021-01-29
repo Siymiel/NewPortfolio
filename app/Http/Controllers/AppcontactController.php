@@ -33,10 +33,10 @@ class AppcontactController extends Controller
 
         $data['slug'] = $data['full_name'];
         
-       $contact = Contact::create($data);
+        $contact = Contact::create($data);
 
         Mail::send(new ContactMade($contact));
 
-        return redirect()->route('storeContact')->with(['success' => 'Hi there! Thank you for reaching out. I\'ll get back to you soon. Thanks!']);
+        return redirect()->route('contact')->with(['success' => 'Hi there! Thank you for reaching out. I\'ll get back to you as soon as possible.']);
     }
 }

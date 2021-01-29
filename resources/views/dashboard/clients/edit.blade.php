@@ -3,7 +3,7 @@
         <x-dashboard.aside/>
             <div class="flex flex-col flex-1 w-full">
                 <x-dashboard.header/>
-        <a class="mt-10 lg:ml-24 lg:mr-24" href="{{route('dashboard.clients.index', $client)}}">
+        <a class="mt-10 lg:ml-24 lg:mr-24" href="{{route('dashboard.clients.index')}}">
             <x-button class="text-white px-2 py-1">
                 Go Back
             </x-button>
@@ -18,15 +18,15 @@
                 <div class="max-w-sm lg:max-w-4xl mx-auto mb-20">
                     <div>
                         {{-- Client Title --}}
-                        @error('client')
+                        @error('title')
                             <span class="text-red-500 mt-2 text-xs font-mono">
                                 * {{$message}}
                             </span>
                         @enderror
-                        <x-label for="client">
+                        <x-label for="title">
                             <p class="font-semibold text-base leading-5 tracking-wider mb-2">Title</p>
                             <div>
-                                <input type="text" name="client" value="{{old('client', $client->title)}}" autocomplete="off" class=" @error('client') border-red-500 @enderror form-input block w-full mt-1 text-base p-2 transition duration-150 ease-in-out focus:border-indigo-300 sm:text-sm sm:leading-5 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"/>
+                                <input type="text" name="title" value="{{old('title', $client->title)}}" autocomplete="off" class=" @error('title') border-red-500 @enderror form-input block w-full mt-1 text-base p-2 transition duration-150 ease-in-out focus:border-indigo-300 sm:text-sm sm:leading-5 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"/>
                             </div>
                         </x-label>
                     </div>

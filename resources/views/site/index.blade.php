@@ -1,7 +1,7 @@
 <x-site-layout>
     <x-site.header/>
     {{-- hero --}}
-    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-10 md:mt-20">
+    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-10 md:mt-20 border-r-2 border-gray-100">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <div class="flex md:order-last justify-center mb-3">
                     <x-application-heroimg/>
@@ -10,8 +10,8 @@
                 <p class="text-xl font-semibold tracking-wide">Hi! I'am <span class="text-red-400">Samuel Kinuthia</span> and</p>
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-black capitalize tracking-wider leading-relaxed mt-3">I'll help you build</h1>
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-black capitalize tracking-wider">your website.</h1>
-                <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.</p>
-                <a href="/contact">
+                <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">Would you like to have an elegant design for your website? I design engaging websites and deliver top SEO ranking, specializing in website design and custom web development.</p>
+                <a href="{{route('contact')}}">
                     <p class="text-base md:text-lg text-red-400 hover:text-gray-800 font-semibold mt-5 border-b-2 border-red-400">
                         Connect with me! --->
                     </p>
@@ -56,7 +56,7 @@
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize tracking-wider leading-relaxed mt-3 text-gray-300">About <span class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">me<span></h1>
                     <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I am Professional Web Designer and Developer. I build backend services (APIs) with a focus on high availability, a low latency, and scalability. My core language is PHP-Laravel.</p>
                     <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I'm the co-founder of <span class="text-gray-300">Snobole Software</span> where I work as a technical lead but am still open to opportunities.</p>
-                    <a href="/contact">
+                    <a href="{{route('contact')}}">
                         <p class="text-base md:text-lg hover:text-gray-300 text-red-400 font-semibold mb-5 mt-5 border-b-2 border-red-400">
                             Hire me! --->
                         </p>
@@ -80,9 +80,11 @@
 		<ul class="splide__list">
             @foreach($services as $service)
             <li class="splide__slide">
-                <div class="max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-gray-900">
-                <h2 class="text-red-400 text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$service->title}}</h2>
-                <p class="mt-2 text-gray-500 font-semibold mb-2">{{$service->caption}}</p>
+                {{-- bg-gray-900 opacity-95 --}}
+                <div class="relative max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1593697820826-2e76c9720a99?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8YWV1NnJMLWo2ZXd8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                <div class="absolute inset-0 bg-black opacity-75"></div>
+                <h2 class="text-red-400 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$service->title}}</h2>
+                <p class="mt-2 text-gray-400 relative font-semibold mb-2">{{$service->caption}}</p>
                 </div>
             </li>
             @endforeach

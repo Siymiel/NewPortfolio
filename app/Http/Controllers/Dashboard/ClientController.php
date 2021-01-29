@@ -125,10 +125,10 @@ class ClientController extends Controller
     /**
      * @return void
      */
-    protected function validateRequest(Request $request)
+    protected function validateRequest()
     {
         return request()->validate([
-            'title' => 'required|max:191',
+            'title' => 'required|string|max:191',
             'body' => 'required|string',
             'active' => 'required',
         ]);

@@ -9,16 +9,14 @@
                 <p class="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700 ml-1">Samuel Kinuthia</p>
             </a>
     
-            <div>
-                <nav>
-                    <ul class="flex md:space-x-4 text-gray-600 font-bold lg:font-semibold text-sm lg:text-lg">
-                        <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/">Home</a></li>
-                        <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#about">About</a></li>
-                        <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#services">Services</a></li>
-                        <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <ul class="flex justify-end md:space-x-2 text-gray-600 font-bold lg:font-semibold text-sm lg:text-lg">
+                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="/">Home</a></li>
+                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="#about">About</a></li>
+                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="#services">Services</a></li>
+                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="/contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 
@@ -43,7 +41,7 @@
     </div>
     <aside class="w-64 md:hidden" x-show="open" @click.away="open = false">
         <nav>
-            <ul class="ml-10 mb-5 space-y-5 font-bold text-sm">
+            <ul class="ml-10 mb-5 space-y-5 mt-4 font-bold text-sm">
                 <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/">Home</a></li>
                 <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#about">About</a></li>
                 <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#services">Services</a></li>

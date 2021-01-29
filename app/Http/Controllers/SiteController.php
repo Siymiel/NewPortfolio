@@ -17,4 +17,9 @@ class SiteController extends Controller
             'clients' => Client::where('active', 1)->get(),
         ]); 
     }
+
+    public function showContactPg()
+    {
+        return view('site.contact');
+    }
 }

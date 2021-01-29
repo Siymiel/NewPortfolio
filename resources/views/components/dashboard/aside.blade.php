@@ -3,7 +3,8 @@
     {{-- Logo --}}
     <a href="{{route('dashboard.index')}}">
         <div class="ml-10">
-            <img class="w-24 h-20 object-cover object-center" src="#" alt="logo">
+            {{-- <img class="w-24 h-20 object-cover object-center" src="#" alt="logo"> --}}
+            <x-dashboard.dashapp-logo/>
         </div>     
     </a>
     <div class="py-4 text-gray-500 dark:text-gray-400">
