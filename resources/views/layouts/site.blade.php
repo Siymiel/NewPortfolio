@@ -18,8 +18,9 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="{{asset('splidejs/dist/js/splide.min.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     </head>
-    <body class="font-ubuntu antialiased">
+    <body class="font-ubuntu antialiased" x-data="{open: false}">
         <div class="min-h-screen bg-gray-50">
             <!-- Page Heading -->
             <header class="shadow">

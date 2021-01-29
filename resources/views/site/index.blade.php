@@ -1,15 +1,15 @@
 <x-site-layout>
     <x-site.header/>
     {{-- hero --}}
-    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-10 md:mt-20">
+    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-10 md:mt-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <div class="flex md:order-last justify-center mb-3">
                     <x-application-heroimg/>
             </div>
             <div class="px-5">
                 <p class="text-xl font-semibold tracking-wide">Hi! I'am <span class="text-red-400">Samuel Kinuthia</span> and</p>
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black capitalize tracking-wider leading-relaxed mt-3">I'll help you build</h1>
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black capitalize tracking-wider">your website.</h1>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-black capitalize tracking-wider leading-relaxed mt-3">I'll help you build</h1>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-black capitalize tracking-wider">your website.</h1>
                 <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.</p>
                 <a href="/contact">
                     <p class="text-base md:text-lg text-red-400 hover:text-gray-800 font-semibold mt-5 border-b-2 border-red-400">
@@ -53,7 +53,7 @@
                 </svg>
             </div>
             <div class="px-5">
-                <h1 class="text-3xl sm:text-4xl font-black capitalize tracking-wider leading-relaxed mt-3 text-gray-300">About <span class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">me<span></h1>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize tracking-wider leading-relaxed mt-3 text-gray-300">About <span class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">me<span></h1>
                     <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I am Professional Web Designer and Developer. I build backend services (APIs) with a focus on high availability, a low latency, and scalability. My core language is PHP-Laravel.</p>
                     <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I'm the co-founder of <span class="text-gray-300">Snobole Software</span> where I work as a technical lead but am still open to opportunities.</p>
                     <a href="/contact">
@@ -69,19 +69,6 @@
     {{-- Services --}}
      <section id="services" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
         <div class="flex justify-between">
-            {{-- <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="67.224" height="58" viewBox="0 0 67.224 58">
-                <g id="Group_1" data-name="Group 1" transform="translate(-344.5 -148.998)">
-                    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(346 148.998)" fill="#f6f6f6" stroke="rgba(154,165,157,0.88)" stroke-width="1">
-                    <circle cx="29" cy="29" r="29" stroke="none"/>
-                    <circle cx="29" cy="29" r="28.5" fill="none"/>
-                    </g>
-                    <line id="Line_1" data-name="Line 1" x2="67.224" transform="translate(344.5 192.267)" fill="none" stroke="#aeb6f9" stroke-width="1"/>
-                    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="15.5" cy="15" rx="15.5" ry="15" transform="translate(350 161.998)" fill="rgba(21,20,22,0.71)"/>
-                    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(369 157.998)" fill="rgba(203,47,47,0.84)"/>
-                </g>
-                </svg>
-            </div> --}}
             <div class="ml-3">
                 <p class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl tracking-wide font-semibold leading-relaxed">My <span class="text-3xl sm:text-4xl lg:text-5xl">Services<span></p>
                 <p class="text-base md:text-lg text-gray-500 tracking-wide font-semibold leading-relaxed mt-2">My main objective is when you as the client walks away, you're thinking, 'Wow, I love doing business with Sam, and I want to tell others about the experience'.</p>
@@ -95,7 +82,7 @@
             <li class="splide__slide">
                 <div class="max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-gray-900">
                 <h2 class="text-red-400 text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$service->title}}</h2>
-                <p class="mt-2 text-gray-400 font-semibold mb-2">{{$service->caption}}</p>
+                <p class="mt-2 text-gray-500 font-semibold mb-2">{{$service->caption}}</p>
                 </div>
             </li>
             @endforeach
@@ -110,18 +97,6 @@
                 <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed"><span class="text-4xl lg:text-5xl">Projects</span> I've build and</p>
                 <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed">businesses I've collaborated with.</p>
             </div>
-            {{-- <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
-                    <g id="Group_1" data-name="Group 1" transform="translate(-351 -149.211)">
-                        <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(351 149.211)" fill="#f6f6f6" stroke="rgba(154,165,157,0.88)" stroke-width="1">
-                        <circle cx="29" cy="29" r="29" stroke="none"/>
-                        <circle cx="29" cy="29" r="28.5" fill="none"/>
-                        </g>
-                        <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="15.5" cy="15" rx="15.5" ry="15" transform="translate(375 156.211)" fill="rgba(21,20,22,0.71)"/>
-                        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="8" cy="8.5" rx="8" ry="8.5" transform="translate(360 176.211)" fill="rgba(203,47,47,0.84)"/>
-                    </g>
-                </svg>
-            </div> --}}
         </div>
     </section>
 
@@ -148,31 +123,19 @@
     @endforeach
 
     {{-- testimonials --}}
-    <section class="max-w-md lg:max-w-5xl mx-auto mt-36">
+    <section class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
     <div class="flex justify-between">
         <div>
             <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed">What <span class="text-4xl lg:text-5xl">Clients</span> say</p>
         </div>
-        {{-- <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
-        <g id="Group_1" data-name="Group 1" transform="translate(-351 -149.211)">
-            <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(351 149.211)" fill="#f6f6f6" stroke="rgba(154,165,157,0.88)" stroke-width="1">
-            <circle cx="29" cy="29" r="29" stroke="none"/>
-            <circle cx="29" cy="29" r="28.5" fill="none"/>
-            </g>
-            <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="15.5" cy="15" rx="15.5" ry="15" transform="translate(375 156.211)" fill="rgba(21,20,22,0.71)"/>
-            <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="8" cy="8.5" rx="8" ry="8.5" transform="translate(360 176.211)" fill="rgba(203,47,47,0.84)"/>
-        </g>
-        </svg>
-        </div> --}}
     </div>
       
     </section>
-    <section class="lg:flex max-w-6xl mx-auto space-x-4">
+    <section class="lg:flex max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto space-x-4">
         @foreach($clients as $client)
-        <div class="max-w-md mx-auto py-4 px-8 shadow-lg rounded-lg mt-24 bg-gray-200">
-            <div class="flex justify-center md:justify-end -mt-10">
-                <img class="w-20 h-20 object-cover rounded-full border-2 border-gray-500" alt="Testimonial avatar" src="{{$client->image_link}}">
+        <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-200">
+            <div class="flex justify-center sm:justify-end -mt-14">
+                <img class="w-20 h-20 object-cover object-center rounded-full border-2 border-gray-500" alt="Client's avatar" src="{{$client->image_link}}">
             </div>
     
             <h2 class="text-gray-800 text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$client->title}}</h2>

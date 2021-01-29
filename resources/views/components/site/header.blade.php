@@ -1,33 +1,54 @@
 <x-slot name="header">
-    <nav>
-        <div class="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <a href="#">
-                        <x-application-logo/>
-                    </a>
-                    <p class="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700 ml-2">Samuel Kinuthia</p>
+    <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
+        <div class="hidden md:flex justify-between items-center py-2">
+            {{-- Logo --}}
+            <a class="flex items-center" href="{{route('home')}}">
+                <div>
+                    <x-application-logo/>
                 </div>
-                
-                <!-- Mobile menu button -->
-                <div class="flex md:hidden">
-                    <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
-                        <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div class="md:flex items-center">
-                <div class="flex flex-col md:flex-row md:mx-6">
-                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/">Home</a></a>
-                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#about">About</a>
-                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#services">Services</a>
-                    <a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/contact">Contact</a>
-                </div>
+                <p class="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700 ml-1">Samuel Kinuthia</p>
+            </a>
+    
+            <div>
+                <nav>
+                    <ul class="flex md:space-x-4 text-gray-600 font-bold lg:font-semibold text-sm lg:text-lg">
+                        <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/">Home</a></li>
+                        <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#about">About</a></li>
+                        <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#services">Services</a></li>
+                        <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
+
+     {{-- mobile sidebar --}}
+    <div class="md:hidden flex justify-between mx-5 py-3">
+        {{-- Logo --}}
+        <a class="flex items-center" href="{{route('home')}}">
+            <div>
+                <x-application-logo/>
+            </div>  
+            <p class="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700 ml-1">Samuel Kinuthia</p>   
+        </a>
+        <!-- Hamburger -->
+        <div class="-mr-2 flex items-center md:hidden">
+            <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path :class="{'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <path :class="{'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <aside class="w-64 md:hidden" x-show="open" @click.away="open = false">
+        <nav>
+            <ul class="ml-10 mb-5 space-y-5 font-bold text-sm">
+                <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/">Home</a></li>
+                <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#about">About</a></li>
+                <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="#services">Services</a></li>
+                <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
 </x-slot>
