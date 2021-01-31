@@ -98,6 +98,7 @@ class ProjectController extends Controller
         $project->title = $request->input('title');
         $project->slug = $project->title;
         $project->body = $request->input('body');
+        $project->link = $request->input('link');
         $project->technology = $request->input('technology');
         $project->active = $request->input('active');
 
