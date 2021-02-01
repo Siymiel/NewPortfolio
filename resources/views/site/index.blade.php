@@ -1,15 +1,19 @@
 <x-site-layout>
     <x-site.header/>
     {{-- hero --}}
-    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-10 md:mt-20 border-r-2 border-gray-100">
+    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-10 md:mt-20 border-r-2 border-gray-100" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <div class="flex md:order-last justify-center mb-3">
                     <x-application-heroimg/>
             </div>
             <div class="px-5">
                 <p class="text-xl font-semibold tracking-wide">Hi! I'am <span class="text-red-400">Samuel Kinuthia</span> and</p>
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-black capitalize tracking-wider leading-relaxed mt-3">I'll help you build</h1>
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-black capitalize tracking-wider">your website.</h1>
+                <div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-black capitalize tracking-wider leading-relaxed mt-3">I'll help you build</h1>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-black capitalize tracking-wider">your website.</h1>
+                </div>
                 <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">Would you like to have an elegant design for your website? I design engaging websites and deliver top SEO ranking, specializing in website design and custom web development.</p>
                 <a href="{{route('contact')}}">
                     <p class="text-base md:text-lg text-red-400 hover:text-gray-800 font-semibold mt-5 border-b-2 border-red-400">
@@ -29,7 +33,7 @@
     </div>
 
     {{-- About me --}}
-     <section class="w-full mx-auto bg-gray-900">
+     <section class="w-full mx-auto bg-gray-900" data-aos="fade-up" data-aos-duration="3000">
         <section id="about" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-32 pt-5 pb-5">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
              <div class="flex justify-center py-5">
@@ -61,7 +65,7 @@
      </section>
 
     {{-- Services --}}
-     <section id="services" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
+     <section id="services" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36" data-aos="fade-up" data-aos-duration="3000">
         <div class="flex justify-between">
             <div class="ml-3">
                 <p class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl tracking-wide font-semibold leading-relaxed">My <span class="text-3xl sm:text-4xl lg:text-5xl">Services<span></p>
@@ -69,7 +73,7 @@
             </div>
         </div>
     </section>
-    <div class="splide max-w-lg sm:max-w-xl md:max-w-4xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-24">
+    <div class="splide max-w-lg sm:max-w-xl md:max-w-4xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-12" data-aos="fade-up" data-aos-duration="3000">
 	<div class="splide__track">
 		<ul class="splide__list">
             @foreach($services as $service)
@@ -86,7 +90,7 @@
 </div>
 
     {{-- Projects --}}
-    <section class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
+    <section class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36" data-aos="fade-up" data-aos-duration="3000">
         <div class="flex justify-between">
             <div>
                 <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed"><span class="text-4xl lg:text-5xl">Projects</span> I've build and</p>
@@ -97,7 +101,7 @@
 
     {{-- Projects --}}
     @foreach($projects as $project)
-        <section>
+        <section data-aos="fade-up" data-aos-duration="3000">
             <article class="md:py-4 md:flex md:justify-center mt-8">
                 <div class="bg-white lg:mx-8 md:flex max-w-sm mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-4xl xl:max-w-5xl shadow-lg lg:rounded-lg">
                     <div class="md:w-1/2">
@@ -118,7 +122,7 @@
     @endforeach
 
     {{-- testimonials --}}
-    <section class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
+    <section class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36" data-aos="fade-up" data-aos-duration="3000">
     <div class="flex justify-between">
         <div>
             <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed">What <span class="text-4xl lg:text-5xl">Clients</span> say</p>
@@ -126,7 +130,7 @@
     </div>
       
     </section>
-    <section class="lg:flex max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto space-x-4">
+    <section class="lg:flex max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto space-x-4" data-aos="fade-up" data-aos-duration="3000">
         @foreach($clients as $client)
         <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-200">
             <div class="flex justify-center sm:justify-end -mt-14">

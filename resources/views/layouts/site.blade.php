@@ -43,6 +43,7 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="{{asset('splidejs/dist/js/splide.min.js')}}"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body class="font-ubuntu antialiased" x-data="{open: false}">
         <div class="min-h-screen bg-gray-50">
@@ -58,7 +59,8 @@
                 {{ $slot }}
             </main>
         </div>
-        <script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script defer>
             document.addEventListener( 'DOMContentLoaded', function () {
                 var options = {
                     autoplay: true,
@@ -68,6 +70,9 @@
                 };
                 new Splide( '.splide', options ).mount();
             } );
+        </script>
+        <script>
+            AOS.init();
         </script>
     </body>
 </html>

@@ -11,10 +11,8 @@
     
             <nav>
                 <ul class="flex justify-end md:space-x-2 text-gray-600 font-bold lg:font-semibold text-sm lg:text-lg">
-                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="/">Home</a></li>
-                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="#about">About</a></li>
-                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="#services">Services</a></li>
-                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="/contact">Contact</a></li>
+                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="{{route('home')}}">About</a></li>
+                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="{{route('contact')}}">Contact</a></li>
                 </ul>
             </nav>
         </div>

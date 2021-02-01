@@ -2,13 +2,15 @@
     <x-site.header/>
 
     {{-- Contact Form --}}
-    <section>
+    <section data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
       <x-site.flashmsg/>
         <div class="grid grid-cols-1 md:grid-cols-2 max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-20">
             
             <div class="bg-gray-800 px-10"> 
                 <h1 class="font-bold text-4xl mb-8 text-gray-300 mt-10">Get in touch</h1>
-                <p class="text-sm font-semibold text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorum explicabo ducimus esse debitis adipisci officia cupiditate deserunt?</p>
+                <p class="text-sm font-semibold text-gray-500">A successful website does three things. It attracts the right kind of visitors. Guides them to the main services or products you offer and collects contact details for future ongoing relations. Let me help you achieve it.</p>
                 <div class="text-gray-400 text-base font-semibold mt-10">
                   <div class="flex items-center">
                     <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -27,7 +29,7 @@
                 <p class="text-gray-400 text-base font-semibold">Nairobi, Kenya</p>
 
                 {{-- Social Icons --}}
-                <div class="flex space-x-5 mt-16">
+                <div class="flex space-x-5 mt-16 mb-7 md:mb-0">
                   {{-- Facebook --}}
                   <a href="https://www.facebook.com/samuel.kinuthia.71271/" target="_blank">
                     <svg class="fill-current text-gray-200 hover:text-red-400" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

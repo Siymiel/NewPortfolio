@@ -47,9 +47,9 @@
                                 <span class="block uppercase text-gray-300 text-sm font-semibold mb-2">Quick Links</span>
                             </div>
                                 <ul class="list-unstyled">
-                                    <li><a class="text-gray-300 ml-6 hover:text-red-400 hover:underline font-semibold block pb-2 text-sm" href="#about">About Me</a></li>
+                                    <li><a class="text-gray-300 ml-6 hover:text-red-400 hover:underline font-semibold block pb-2 text-sm" href="{{route('contact')}}">Contact</a></li>
                                     <li><a class="text-gray-300 ml-6 hover:text-red-400 hover:underline font-semibold block pb-2 text-sm" href="https://github.com/Siymiel" target="_blank">Github</a></li>
-                                    <li><a class="text-gray-300 ml-6 hover:text-red-400 hover:underline font-semibold block pb-2 text-sm" href="#services">Services</a></li>
+                                    {{-- <li><a class="text-gray-300 ml-6 hover:text-red-400 hover:underline font-semibold block pb-2 text-sm" href="#services">Services</a></li> --}}
                                 </ul>
                         </div>
                         <div class="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
