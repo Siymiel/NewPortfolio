@@ -65,7 +65,7 @@
      </section>
 
     {{-- Services --}}
-     <section id="services" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36" data-aos="fade-up" data-aos-duration="3000">
+     <section id="services" class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36" data-aos="fade-up" data-aos-duration="3000">
         <div class="flex justify-between">
             <div class="ml-3">
                 <p class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl tracking-wide font-semibold leading-relaxed">My <span class="text-3xl sm:text-4xl lg:text-5xl">Services<span></p>
