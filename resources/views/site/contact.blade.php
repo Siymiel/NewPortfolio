@@ -2,9 +2,7 @@
     <x-site.header/>
 
     {{-- Contact Form --}}
-    <section data-aos="flip-left"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000">
+    <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
       <x-site.flashmsg/>
         <div class="grid grid-cols-1 md:grid-cols-2 max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-20">
             
@@ -56,7 +54,7 @@
                   </a>
               </div>
             </div>
-            <form action="{{route('contactstore')}}" method="POST" class="px-10 border-2 border-gray-200">
+            <form action="{{route('contactstore')}}" method="POST" class="px-10 border-2 border-gray-200" >
               @csrf
                 <h1 class="font-bold text-4xl mb-7 mt-10">Enter Details</h1>
                 <div class="grid grid-cols-2 gap-8">
@@ -127,3 +125,4 @@
 
     <x-site.footer/>
 </x-site-layout>
+{{-- --}}
