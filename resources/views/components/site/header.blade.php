@@ -40,8 +40,8 @@
     <aside class="w-64 md:hidden" x-show="open" @click.away="open = false">
         <nav>
             <ul class="ml-10 mb-5 space-y-5 mt-4 font-bold text-sm">
-                <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/">About</a></li>
-                <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="/contact">Contact</a></li>
+                <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="{{route('home')}}">About</a></li>
+                <li><a class="my-1 text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-4 md:my-0" href="{{route('contact')}}">Contact</a></li>
             </ul>
         </nav>
     </aside>
