@@ -52,8 +52,8 @@
             </div>
             <div class="px-5">
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize tracking-wider leading-relaxed mt-3 text-gray-300">About <span class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">me<span></h1>
-                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I am Professional Web Designer and Developer. I build backend services (APIs) with a focus on high availability, a low latency, and scalability. My core language is PHP-Laravel.</p>
-                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I'm the co-founder of <span class="text-gray-300"><a href="https://snobole.com" target="_blank">Snobole Software</a></span> where I work as a technical lead but am still open to opportunities.</p>
+                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I am professional web designer and developer. I build and replicate front-end layouts and back-end services (APIs). My tool kits include: HTML, CSS (TailwindCss, Bootstrap, Saas), JavaScript, Livewire and Laravel (PHP).</p>
+                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I'm also the co-founder of <span class="text-gray-300"><a class="hover:text-red-400" href="https://snobole.com" target="_blank">Snobole Software</a></span> where I work as a technical lead but am still open to opportunities.</p>
                     <a href="{{route('contact')}}">
                         <p class="text-base md:text-lg hover:text-gray-300 text-red-400 font-semibold mb-5 mt-5 border-b-2 border-red-400">
                             Hire me! --->
