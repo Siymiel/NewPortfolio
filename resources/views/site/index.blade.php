@@ -142,14 +142,14 @@
         </a>
     </div>
    
-    <div class="max-w-xl mx-auto mt-14 italic">
-        <p class="text-2xl text-gray-300 font-semibold"> 
+    <div class="max-w-sm sm:max-w-md md:max-w-xl mx-auto mt-14 italic">
+        <p class="text-lg md:text-2xl text-gray-400 font-semibold"> 
             " Our greatest fear should not be of failure, but of succeeding at things in life that don't really matter. "
         </p>
     </div>
 
-    <div class="max-w-xl mx-auto flex italic">
-        <p class="text-xl text-gray-300 font-medium">--Anonymous--</p>
+    <div class="max-w-sm sm:max-w-md md:max-w-xl mx-auto flex italic">
+        <p class="text-base md:text-xl text-gray-400 font-medium">--Anonymous--</p>
     </div>
     <x-site.footer/>
 </x-site-layout>
