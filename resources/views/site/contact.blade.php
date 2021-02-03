@@ -2,7 +2,7 @@
     <x-site.header/>
 
     {{-- Contact Form --}}
-    <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
+    <section data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
       <x-site.flashmsg/>
         <div class="grid grid-cols-1 md:grid-cols-2 max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-20">
             

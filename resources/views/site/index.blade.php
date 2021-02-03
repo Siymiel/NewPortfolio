@@ -27,9 +27,11 @@
 
     {{-- icon-1 --}}
     <div class="mt-28 flex justify-center">
-        <svg class="fill-current w-7 h-7 hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M12.505 8.698L10 11 7.494 8.698a.512.512 0 00-.718 0 .5.5 0 000 .71l2.864 2.807a.51.51 0 00.717 0l2.864-2.807a.498.498 0 000-.71.51.51 0 00-.716 0zM10 .4A9.6 9.6 0 00.4 10c0 5.303 4.298 9.6 9.6 9.6s9.6-4.297 9.6-9.6A9.6 9.6 0 0010 .4zm0 17.954c-4.615 0-8.354-3.74-8.354-8.354S5.385 1.646 10 1.646a8.354 8.354 0 010 16.708z"/>
-        </svg>
+        <a href="#about">
+            <svg class="fill-current w-7 h-7 hover:text-red-400 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M12.505 8.698L10 11 7.494 8.698a.512.512 0 00-.718 0 .5.5 0 000 .71l2.864 2.807a.51.51 0 00.717 0l2.864-2.807a.498.498 0 000-.71.51.51 0 00-.716 0zM10 .4A9.6 9.6 0 00.4 10c0 5.303 4.298 9.6 9.6 9.6s9.6-4.297 9.6-9.6A9.6 9.6 0 0010 .4zm0 17.954c-4.615 0-8.354-3.74-8.354-8.354S5.385 1.646 10 1.646a8.354 8.354 0 010 16.708z"/>
+            </svg>
+        </a>
     </div>
 
     {{-- About me --}}
@@ -65,7 +67,7 @@
      </section>
 
     {{-- Services --}}
-     <section id="services" class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
+     <section id="services" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
         <div class="flex justify-between">
             <div class="ml-3">
                 <p class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl tracking-wide font-semibold leading-relaxed">My <span class="text-3xl sm:text-4xl lg:text-5xl">Services<span></p>
@@ -78,10 +80,10 @@
 		<ul class="splide__list">
             @foreach($services as $service)
             <li class="splide__slide">
-                <div class="relative max-w-sm sm:max-w-md md:max-w-2xl h-auto lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center" style="background-image: url({{asset('images/pattern.jfif')}})">
-                <div class="absolute inset-0 bg-black opacity-75"></div>
-                <h2 class="text-red-400 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$service->title}}</h2>
-                <p class="mt-2 text-gray-400 relative font-semibold mb-2">{{$service->caption}}</p>
+                <div class="relative max-w-md md:max-w-2xl h-auto lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center border-2 border-gray-400" style="background-image: url({{asset('images/pattern.jfif')}})">
+                <div class="absolute inset-0 bg-gray-200 opacity-75 "></div>
+                <h2 class="text-red-500 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$service->title}}</h2>
+                <p class="mt-2 text-gray-900 relative font-semibold mb-2">{{$service->caption}}</p>
                 </div>
             </li>
             @endforeach
@@ -90,7 +92,7 @@
 </div>
 
     {{-- Projects --}}
-    <section class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
+    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
         <div class="flex justify-between">
             <div>
                 <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed"><span class="text-4xl lg:text-5xl">Projects</span> I've build and</p>
@@ -103,7 +105,7 @@
     @foreach($projects as $project)
         <section>
             <article class="md:py-4 md:flex md:justify-center mt-8">
-                <div class="bg-white lg:mx-8 md:flex max-w-sm mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-4xl xl:max-w-5xl shadow-lg lg:rounded-lg">
+                <div class="bg-white lg:mx-8 md:flex max-w-md mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-4xl xl:max-w-5xl shadow-lg lg:rounded-lg border-2 border-gray-400">
                     <div class="md:w-1/2">
                         <div class="h-64 bg-cover bg-center md:h-full" style="background-image:url('{{$project->image_link}}')"></div>
                     </div>
@@ -122,7 +124,7 @@
     @endforeach
 
     {{-- testimonials --}}
-    <section class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
+    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
     <div class="flex justify-between">
         <div>
             <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed">What <span class="text-4xl lg:text-5xl">Clients</span> say</p>
@@ -130,11 +132,11 @@
     </div>
       
     </section>
-    <section class="lg:flex max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto space-x-4">
+    <section class="lg:flex max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto md:space-x-4">
         @foreach($clients as $client)
-        <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-200">
+        <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-200 border-2 border-gray-400">
             <div class="flex justify-center sm:justify-end -mt-14">
-                <img class="w-20 h-20 object-cover object-center rounded-full border-2 border-gray-500" alt="Client's avatar" src="{{$client->image_link}}">
+                <img class="w-20 h-20 object-cover object-center rounded-full border-2 border-red-400" alt="Client's avatar" src="{{$client->image_link}}">
             </div>
     
             <h2 class="text-gray-800 text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$client->title}}</h2>
