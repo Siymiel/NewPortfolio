@@ -2,7 +2,7 @@
     <x-site.header/>
 
     {{-- Contact Form --}}
-    <section data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
+    <section data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >
       <x-site.flashmsg/>
         <div class="grid grid-cols-1 md:grid-cols-2 max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-20">
             
@@ -27,14 +27,14 @@
                 <p class="text-gray-400 text-base font-semibold">Nairobi, Kenya</p>
 
                 <div>
-                  <p class="mt-10 mb-10 md:mb-0 text-red-400 font-semibold text-base"><a href="{{route('home')}}"><-- Back</a></p>
+                  <p class="mt-10 mb-10 md:mb-0 text-red-400  hover:text-gray-300 font-semibold text-base"><a href="{{route('home')}}"><-- Back</a></p>
                 </div>
             </div>
             <form action="{{route('contactstore')}}" method="POST" class="px-10 border-2 border-gray-200" >
               @csrf
                 <h1 class="font-bold text-4xl mb-7 mt-10">Enter Details</h1>
                 <div class="grid grid-cols-2 gap-8">
-                  {{-- full_name --}}
+                    {{-- Full_name --}}
                     <div>
                         @error('full_name')
                           <span class="text-red-500 -ml-7 mt-2 text-xs font-mono">
@@ -43,7 +43,7 @@
                         @enderror
                         <label for="fullname" class="block text-base font-semibold text-gray-700">Full Name</label>
                         <div class="mt-1 rounded-md shadow-sm">
-                          <input type="text" name="full_name" value="{{old('full_name')}}" id="fullname" class=" @error('full_name') border-red-500 @enderror focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm rounded-md">
+                          <input type="text" name="full_name" value="{{old('full_name')}}" id="fullname" class=" @error('full_name') border-red-500 @enderror focus:ring-green-400 focus:border-green-400 block w-full pl-7 pr-12 sm:text-sm rounded-md">
                         </div>
                     </div>
                     
@@ -56,7 +56,7 @@
                         @enderror
                       <label for="email" class="block text-base font-semibold text-gray-700">Email</label>
                         <div class="mt-1 rounded-md shadow-sm">
-                          <input type="email" name="email" value="{{old('email')}}" id="email" class=" @error('email') border-red-500 @enderror focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm rounded-md">
+                          <input type="email" name="email" value="{{old('email')}}" id="email" class=" @error('email') border-red-500 @enderror focus:ring-green-400 focus:border-green-400 block w-full pl-7 pr-12 sm:text-sm rounded-md">
                           </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                         @enderror                    
                       <label for="phonenumber" class="block text-base font-semibold text-gray-700">Phone Number</label>
                       <div class="mt-1 rounded-md shadow-sm">
-                        <input type="tel" name="phone_number" value="{{old('phone_number')}}" id="phonenumber" class=" @error('phone_number') border-red-500 @enderror focus:ring-indigo-500 focus:border-indigo-500 block w-1/2 pl-7 pr-12 sm:text-sm rounded-md">
+                        <input type="tel" name="phone_number" value="{{old('phone_number')}}" id="phonenumber" class=" @error('phone_number') border-red-500 @enderror focus:ring-green-400  focus:border-green-400 block w-1/2 pl-7 pr-12 sm:text-sm rounded-md">
                       </div>
                     </div>
                 
@@ -85,7 +85,7 @@
                         @enderror                  
                       <label for="message" class="block text-base font-semibold text-gray-700">Message</label>
                       <div class="mt-1 rounded-md shadow-sm">
-                        <textarea name="message" id="message" rows="5" class=" @error('message') border-red-500 @enderror focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm rounded-md">{{old('message')}}</textarea>                     
+                        <textarea name="message" id="message" rows="5" class=" @error('message') border-red-500 @enderror focus:ring-green-400 focus:border-green-400 block w-full pl-7 pr-12 sm:text-sm rounded-md">{{old('message')}}</textarea>                     
                     </div>
                 </div>
 

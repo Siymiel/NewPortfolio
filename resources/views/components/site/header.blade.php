@@ -11,8 +11,8 @@
     
             <nav>
                 <ul class="flex justify-end md:space-x-2 text-gray-600 font-bold lg:font-semibold text-sm lg:text-lg">
-                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="{{route('home')}}">About</a></li>
-                    <li><a class="text-sm text-gray-700 font-semibold hover:text-red-400 md:mx-3" href="{{route('contact')}}">Contact</a></li>
+                    <li class="text-sm font-semibold hover:text-red-400 md:mx-4 {{is_active_front('/')}}"><a href="{{route('home')}}">Home</a></li>
+                    <li class="text-sm font-semibold hover:text-red-400 md:mx-4 {{is_active_front('contact')}}"><a href="{{route('contact')}}">Contact</a></li>
                 </ul>
             </nav>
         </div>

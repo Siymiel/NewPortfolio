@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/terms-and-conditions', 'site.termsandconditions')->name('t&c');
+Route::view('/privacy-policy', 'site.privacypolicy')->name('privacypolicy');
 
 // Site
 Route::get('/', [SiteController::class, 'index'])->name('home');
