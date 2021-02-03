@@ -14,17 +14,21 @@
                     <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                       <path fill="#FFF" d="M11.229 11.229c-1.583 1.582-3.417 3.096-4.142 2.371-1.037-1.037-1.677-1.941-3.965-.102-2.287 1.838-.53 3.064.475 4.068 1.16 1.16 5.484.062 9.758-4.211 4.273-4.274 5.368-8.598 4.207-9.758-1.005-1.006-2.225-2.762-4.063-.475-1.839 2.287-.936 2.927.103 3.965.722.725-.791 2.559-2.373 4.142z"/>
                     </svg>
-                    <p class="ml-3">0797741435</p>
+                    <p class="ml-3"><a href="tel:0797741435" class="hover:text-red-400">0797741435</a> ( make a direct call )</p>
                   </div>
                   <div class="flex items-center">
-                    <svg class="h-5 w-5 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                      <path fill="#FFF" d="M1.574 5.286l7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203l-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z"/>
-                    </svg>
-                    <p class="mt-1 ml-3">skinuthia77@gmail.com</p>
+                      <svg class="h-5 w-5 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path fill="#FFF" d="M1.574 5.286l7.5 4.029c.252.135.578.199.906.199.328 0 .654-.064.906-.199l7.5-4.029c.489-.263.951-1.286.054-1.286H1.521c-.897 0-.435 1.023.053 1.286zm17.039 2.203l-7.727 4.027c-.34.178-.578.199-.906.199s-.566-.021-.906-.199-7.133-3.739-7.688-4.028C.996 7.284 1 7.523 1 7.707V15c0 .42.566 1 1 1h16c.434 0 1-.58 1-1V7.708c0-.184.004-.423-.387-.219z"/>
+                      </svg>
+                      <p class="mt-1 ml-3 hover:text-red-400"><a href="mailto:skinuthia77@gmail.com">skinuthia77@gmail.com</a></p>
                   </div>
                 </div>
                 <p class="text-gray-400 text-base font-semibold mt-5">68137 - 00200</p>
                 <p class="text-gray-400 text-base font-semibold">Nairobi, Kenya</p>
+
+                <div>
+                  <p class="mt-10 mb-10 md:mb-0 text-red-400 font-semibold text-base"><a href="{{route('home')}}"><-- Back</a></p>
+                </div>
             </div>
             <form action="{{route('contactstore')}}" method="POST" class="px-10 border-2 border-gray-200" >
               @csrf

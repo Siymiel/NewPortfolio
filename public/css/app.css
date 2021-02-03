@@ -31428,6 +31428,10 @@ select {
           animation: bounce 1s infinite;
 }
 
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

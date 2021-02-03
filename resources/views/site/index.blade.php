@@ -27,8 +27,8 @@
 
     {{-- icon-1 --}}
     <div class="mt-28 flex justify-center">
-        <a href="#about">
-            <svg class="fill-current w-7 h-7 hover:text-red-400 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <a class="smooth-scroll" href="#about">
+            <svg class="fill-current text-red-600 hover:text-gray-900 w-7 h-7 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path d="M12.505 8.698L10 11 7.494 8.698a.512.512 0 00-.718 0 .5.5 0 000 .71l2.864 2.807a.51.51 0 00.717 0l2.864-2.807a.498.498 0 000-.71.51.51 0 00-.716 0zM10 .4A9.6 9.6 0 00.4 10c0 5.303 4.298 9.6 9.6 9.6s9.6-4.297 9.6-9.6A9.6 9.6 0 0010 .4zm0 17.954c-4.615 0-8.354-3.74-8.354-8.354S5.385 1.646 10 1.646a8.354 8.354 0 010 16.708z"/>
             </svg>
         </a>
@@ -54,7 +54,7 @@
             </div>
             <div class="px-5">
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize tracking-wider leading-relaxed mt-3 text-gray-300">About <span class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">me<span></h1>
-                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I am professional web designer and developer. I build and replicate front-end layouts and back-end services (APIs). My tool kits include: HTML, CSS (TailwindCss, Bootstrap, Saas), JavaScript, Livewire and Laravel (PHP).</p>
+                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I am professional web designer and developer. I build and replicate front-end layouts and back-end services ( APIs ). My tool kits include: HTML, CSS ( TailwindCss, Bootstrap, Sass, PostCss ), JavaScript ( libraries ), Livewire and Laravel ( PHP ).</p>
                     <p class="text-base md:text-lg font-semibold mt-5 text-gray-500">I'm also the co-founder of <span class="text-gray-300"><a class="hover:text-red-400" href="https://snobole.com" target="_blank">Snobole Software</a></span> where I work as a technical lead but am still open to opportunities.</p>
                     <a href="{{route('contact')}}">
                         <p class="text-base md:text-lg hover:text-gray-300 text-red-400 font-semibold mb-5 mt-5 border-b-2 border-red-400">
@@ -105,7 +105,7 @@
     @foreach($projects as $project)
         <section>
             <article class="md:py-4 md:flex md:justify-center mt-8">
-                <div class="bg-white lg:mx-8 md:flex max-w-md mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-4xl xl:max-w-5xl shadow-lg lg:rounded-lg border-2 border-gray-400">
+                <div class="bg-white lg:mx-8 md:flex max-w-md mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-4xl xl:max-w-5xl shadow-lg lg:rounded-lg border-t-2  border-b-2 border-gray-400">
                     <div class="md:w-1/2">
                         <div class="h-64 bg-cover bg-center md:h-full" style="background-image:url('{{$project->image_link}}')"></div>
                     </div>
@@ -146,6 +146,14 @@
         @endforeach
     </section>
 
+    {{-- icon-2 --}}
+    <div class="mt-28 flex justify-center">
+        <a class="smooth-scroll" href="#header">
+            <svg class="fill-current w-7 h-7 text-red-600 hover:text-gray-900 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M10.359 7.785a.51.51 0 00-.717 0l-2.864 2.807a.498.498 0 000 .71.51.51 0 00.717 0L10 9l2.506 2.302a.512.512 0 00.718 0 .5.5 0 000-.71l-2.865-2.807zM10 .4A9.6 9.6 0 00.4 10c0 5.303 4.298 9.6 9.6 9.6s9.6-4.297 9.6-9.6A9.6 9.6 0 0010 .4zm0 17.954c-4.615 0-8.354-3.74-8.354-8.354S5.385 1.646 10 1.646a8.354 8.354 0 010 16.708z"/>
+            </svg>
+        </a>
+    </div>
    
     
     <x-site.footer/>
