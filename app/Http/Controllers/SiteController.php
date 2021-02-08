@@ -13,7 +13,7 @@ class SiteController extends Controller
     {
         return view('site.index', [
             'services' => Service::where('active', 1)->get(),
-            'projects' => Project::where('active', 1)->get(),
+            'projects' => Project::where('active', 1)->latest()->get(),
             'clients' => Client::where('active', 1)->get(),
         ]); 
     }

@@ -68,7 +68,7 @@
             @foreach($services as $service)
             <li class="splide__slide">
                 <div class="relative max-w-md md:max-w-2xl h-auto lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center border-2 border-gray-400" style="background-image: url({{asset('images/pattern.jfif')}})">
-                <div class="absolute inset-0 bg-gray-200 opacity-75 "></div>
+                <div class="absolute inset-0 bg-gray-200 opacity-75"></div>
                 <h2 class="text-red-500 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$service->title}}</h2>
                 <p class="mt-2 text-gray-900 relative font-semibold mb-2">{{$service->caption}}</p>
                 </div>

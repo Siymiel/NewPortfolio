@@ -49,6 +49,7 @@ class ProjectController extends Controller
             'title',
             'body',
             'technology',
+            'link',
             'active',
         ]);
         $data['slug'] = $data['title'];
