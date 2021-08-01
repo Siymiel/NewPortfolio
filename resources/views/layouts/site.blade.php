@@ -46,7 +46,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body class="font-ubuntu antialiased smooth-scroll" x-data="{open: false}">
-        <div class="min-h-screen bg-gray-50">
+        <div class="min-h-screen bg-white">
             <!-- Page Heading -->
             <header id="header" class="shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
