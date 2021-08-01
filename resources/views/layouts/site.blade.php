@@ -65,6 +65,8 @@
                 var options = {
                     autoplay: true,
                     type: 'loop',
+                    perPage: 4,
+                    gap: 25,
                     interval: 6000,
                     easing: 'cubic-bezier(.42,.65,.27,.99)',
                 };

@@ -1,5 +1,5 @@
 <x-slot name="header">
-    <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto">
+    <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">
         <div class="hidden md:flex justify-between items-center py-2">
             {{-- Logo --}}
             <a class="flex items-center" href="{{route('home')}}">
@@ -11,8 +11,8 @@
     
             <nav>
                 <ul class="flex justify-end md:space-x-2 text-gray-600 font-bold lg:font-semibold text-sm lg:text-lg">
-                    <li class="text-sm font-semibold hover:text-red-400 md:mx-4 {{is_active_front('/')}}"><a href="{{route('home')}}">Home</a></li>
-                    <li class="text-sm font-semibold hover:text-red-400 md:mx-4 {{is_active_front('contact')}}"><a href="{{route('contact')}}">Contact</a></li>
+                    <li class="text-base font-semibold hover:text-red-400 md:mx-4 {{is_active_front('/')}}"><a href="{{route('home')}}">Home</a></li>
+                    <li class="text-base font-semibold hover:text-red-400 md:mx-4 {{is_active_front('contact')}}"><a href="{{route('contact')}}">Contact</a></li>
                 </ul>
             </nav>
         </div>

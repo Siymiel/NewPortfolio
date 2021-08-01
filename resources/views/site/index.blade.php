@@ -1,12 +1,13 @@
 <x-site-layout>
     <x-site.header/>
     {{-- hero --}}
-    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-10 md:mt-20 border-r-2 border-gray-100" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-10 md:mt-20" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <div class="flex md:order-last justify-center mb-3">
-                    <x-application-heroimg/>
+                    {{-- <x-application-heroimg/> --}}
+                    <img class="w-full object-cover object-center" src="https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
             </div>
-            <div class="px-5">
+            <div>
                 <p class="text-xl font-semibold tracking-wide">Hi! I'am <span class="text-red-400">Samuel Kinuthia</span> and</p>
                 <div>
                     <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-black capitalize tracking-wider leading-relaxed mt-3">I'll help you build</h1>
@@ -37,7 +38,8 @@
         <section id="about" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-32 pt-5 pb-5">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
              <div class="flex justify-center py-5">
-                <x-application-sam/>   
+                 <img class="w-full object-cover object-center" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"> 
+                {{-- <x-application-sam/>    --}}
             </div>
             <div class="px-5">
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize tracking-wider leading-relaxed mt-3 text-gray-300">About <span class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">me<span></h1>
@@ -54,11 +56,11 @@
      </section>
 
     {{-- Services --}}
-     <section id="services" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
+     <section id="services" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-36">
         <div class="flex justify-between">
-            <div class="ml-3">
+            <div>
                 <p class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl tracking-wide font-semibold leading-relaxed">My <span class="text-3xl sm:text-4xl lg:text-5xl">Services<span></p>
-                <p class="text-base md:text-lg text-gray-500 tracking-wide font-semibold leading-relaxed mt-2">My main objective is when you as the client walks away, you're thinking, 'Wow, I love doing business with Sam, and I want to tell others about the experience'.</p>
+                {{-- <p class="text-base md:text-lg text-gray-500 tracking-wide font-semibold leading-relaxed mt-2">My main objective is when you as the client walks away, you're thinking, 'Wow, I love doing business with Sam, and I want to tell others about the experience'.</p> --}}
             </div>
         </div>
     </section>
@@ -67,9 +69,9 @@
 		<ul class="splide__list">
             @foreach($services as $service)
             <li class="splide__slide">
-                <div class="relative max-w-md md:max-w-2xl h-auto lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center border-2 border-gray-400" style="background-image: url({{asset('images/pattern.jfif')}})">
+                <div class="relative max-w-md md:max-w-2xl h-64 lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center border-2 border-gray-400" style="background-image: url('https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')">
                 <div class="absolute inset-0 bg-gray-200 opacity-75"></div>
-                <h2 class="text-red-500 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$service->title}}</h2>
+                <h2 class="text-red-500 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold z-10">{{$service->title}}</h2>
                 <p class="mt-2 text-gray-900 relative font-semibold mb-2">{{$service->caption}}</p>
                 </div>
             </li>
@@ -79,7 +81,7 @@
 </div>
 
     {{-- Projects --}}
-    <section id="projects" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
+    <section id="projects" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-36">
         <div class="flex justify-between">
             <div>
                 <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed"><span class="text-4xl lg:text-5xl">Projects</span> I've build and</p>
@@ -89,29 +91,29 @@
     </section>
 
     {{-- Projects --}}
-    @foreach($projects as $project)
-        <section>
-            <article class="md:py-4 md:flex md:justify-center mt-8">
-                <div class="bg-white lg:mx-8 md:flex max-w-md mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-4xl xl:max-w-5xl shadow-lg lg:rounded-lg border-t-2  border-b-2 border-gray-400">
-                    <div class="md:w-1/2">
-                        <div class="h-64 bg-cover bg-center md:h-full" style="background-image:url('{{$project->image_link}}')"></div>
+    <section>
+        <article class="grid grid-cols-2 gap-8 mt-8 max-w-6xl mx-auto">
+            @foreach($projects as $project)
+                <div class="bg-white max-w-md mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-5xl xl:max-w-6xl shadow-lg">
+                    <div>
+                        <div class="w-full h-56 bg-cover bg-center" style="background-image:url('{{$project->image_link}}')"></div>
                     </div>
         
-                    <div class="py-12 px-10 max-w-xl sm:max-w-lg md:max-w-3xl lg:max-w-5xl md:w-1/2 bg-gray-200">
+                    <div class="py-5 px-5 max-w-xl sm:max-w-lg md:max-w-3xl lg:max-w-6xl bg-gray-200">
                         <h2 class="text-2xl text-gray-800 font-bold md:text-3xl">{{$project->title}}</h2>
-                        <p class="mt-4 text-gray-500 font-semibold">{{$project->body}}</p>
+                        <p class="mt-3 text-gray-500 font-semibold">{{$project->body}}</p>
                         <p class="mt-2 text-red-400 font-semibold">{{$project->technology}}</p>
-                        <div class="mt-10">
+                        <div class="mt-5">
                             <a href="{{$project->link}}" target="_blank" class="border-2 border-gray-800 text-gray-800 px-4 py-2 font-semibold rounded hover:text-gray-300 hover:bg-gray-800">Visit Site</a>
                         </div>
                     </div>
                 </div>
-            </article>
-        </section>
-    @endforeach
+            @endforeach
+        </article>
+    </section>
 
     {{-- testimonials --}}
-    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto mt-36">
+    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-36">
     <div class="flex justify-between">
         <div>
             <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed">What <span class="text-4xl lg:text-5xl">Clients</span> say</p>
@@ -119,7 +121,7 @@
     </div>
       
     </section>
-    <section class="lg:flex max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto md:space-x-4">
+    <section class="lg:flex max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto md:space-x-4">
         @foreach($clients as $client)
         <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-200 border-2 border-gray-400">
             <div class="flex justify-center sm:justify-end -mt-14">
