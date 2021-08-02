@@ -65,20 +65,20 @@
         </div>
     </section>
     <div class="splide max-w-lg sm:max-w-xl md:max-w-4xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-12">
-	<div class="splide__track">
-		<ul class="splide__list">
-            @foreach($services as $service)
-            <li class="splide__slide">
-                <div class="relative max-w-md md:max-w-2xl h-64 lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center border-2 border-gray-400" style="background-image: url('https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')">
-                <div class="absolute inset-0 bg-gray-200 opacity-75"></div>
-                <h2 class="text-red-500 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold z-10">{{$service->title}}</h2>
-                <p class="mt-2 text-gray-900 relative font-semibold mb-2">{{$service->caption}}</p>
-                </div>
-            </li>
-            @endforeach
-		</ul>
-	</div>
-</div>
+        <div class="splide__track">
+            <ul class="splide__list">
+                @foreach($services as $service)
+                    <li class="splide__slide">
+                        <div class="relative max-w-md md:max-w-2xl h-64 lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center border-2 border-gray-400" style="background-image: url('https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')">
+                        <div class="absolute inset-0 bg-gray-200 opacity-75"></div>
+                        <h2 class="text-red-500 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold z-10">{{$service->title}}</h2>
+                        <p class="mt-2 text-gray-900 relative font-semibold mb-2">{{$service->caption}}</p>
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
 
     {{-- Projects --}}
     <section id="projects" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-36">
@@ -92,19 +92,19 @@
 
     {{-- Projects --}}
     <section>
-        <article class="grid grid-cols-2 gap-8 mt-8 max-w-6xl mx-auto">
+        <article class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 max-w-6xl mx-auto">
             @foreach($projects as $project)
                 <div class="bg-white max-w-md mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-5xl xl:max-w-6xl shadow-lg">
-                    <div>
-                        <div class="w-full h-56 bg-cover bg-center" style="background-image:url('{{$project->image_link}}')"></div>
+                    <div class="border border-solid border-gray-800">
+                        <div class="w-full h-56 bg-cover bg-top" style="background-image:url('{{$project->image_link}}')"></div>
                     </div>
         
-                    <div class="py-5 px-5 max-w-xl sm:max-w-lg md:max-w-3xl lg:max-w-6xl bg-gray-200">
-                        <h2 class="text-2xl text-gray-800 font-bold md:text-3xl">{{$project->title}}</h2>
+                    <div class="py-5 px-5 max-w-xl sm:max-w-lg md:max-w-3xl lg:max-w-6xl bg-gray-900">
+                        <h2 class="text-2xl text-gray-300 font-bold md:text-3xl">{{$project->title}}</h2>
                         <p class="mt-3 text-gray-500 font-semibold">{{$project->body}}</p>
                         <p class="mt-2 text-red-400 font-semibold">{{$project->technology}}</p>
                         <div class="mt-5">
-                            <a href="{{$project->link}}" target="_blank" class="border-2 border-gray-800 text-gray-800 px-4 py-2 font-semibold rounded hover:text-gray-300 hover:bg-gray-800">Visit Site</a>
+                            <a href="{{$project->link}}" target="_blank" class="border-2 border-gray-500 text-gray-500 px-4 py-2 font-semibold rounded hover:text-gray-300 hover:bg-gray-800">Visit Site</a>
                         </div>
                     </div>
                 </div>
@@ -114,15 +114,32 @@
 
     {{-- testimonials --}}
     <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-36">
-    <div class="flex justify-between">
-        <div>
-            <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed">What <span class="text-4xl lg:text-5xl">Clients</span> say</p>
-        </div>
-    </div>
-      
+        <div class="flex justify-between">
+            <div>
+                <p class="text-base md:text-lg lg:text-3xl tracking-wide font-semibold leading-relaxed">What <span class="text-4xl lg:text-5xl">Clients</span> say</p>
+            </div>
+        </div>    
     </section>
-    <section class="lg:flex max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto md:space-x-4">
-        @foreach($clients as $client)
+
+    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                @foreach($clients as $client)
+                    <li class="splide__slide">
+                        <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-200 border-2 border-gray-400">
+                            <div class="flex justify-center sm:justify-end -mt-14">
+                                <img class="w-20 h-20 object-cover object-center rounded-full border-2 border-red-400" alt="Client's avatar" src="{{$client->image_link}}">
+                            </div>
+                    
+                            <h2 class="text-gray-800 text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$client->title}}</h2>
+                    
+                            <p class="mt-2 mb-1 text-gray-500 font-semibold">{{$client->body}}</p>
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+        {{-- @foreach($clients as $client)
         <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-200 border-2 border-gray-400">
             <div class="flex justify-center sm:justify-end -mt-14">
                 <img class="w-20 h-20 object-cover object-center rounded-full border-2 border-red-400" alt="Client's avatar" src="{{$client->image_link}}">
@@ -132,7 +149,8 @@
     
             <p class="mt-2 mb-1 text-gray-500 font-semibold">{{$client->body}}</p>
         </div>
-        @endforeach
+        @endforeach --}}
+
     </section>
 
     {{-- icon-2 --}}

@@ -60,7 +60,7 @@
             </main>
         </div>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script defer>
+        {{-- <script defer>
             document.addEventListener( 'DOMContentLoaded', function () {
                 var options = {
                     autoplay: true,
@@ -72,7 +72,39 @@
                 };
                 new Splide( '.splide', options ).mount();
             } );
-        </script>
+        </script> --}}
+       
+       <script defer>
+            var elms = document.getElementsByClassName( 'splide' );
+            var options = {
+                    autoplay: true,
+                    type: 'loop',
+                    perPage: 4,
+                    gap: 25,
+                    interval: 6000,
+                    speed: 1000,
+                    pagination: true,
+                    pauseOnFocus: true,
+                    easing: 'cubic-bezier(.42,.65,.27,.99)',
+                    breakpoints: {
+                        640: {
+                            perPage: 1,
+                        },
+                        768: {
+                            perPage: 1,
+                        },
+                        1024: {
+                            perPage: 3,
+                        },
+                        1280: {
+                            perPage: 4,
+                        },
+                    },
+                };
+            for ( var i = 0, len = elms.length; i < len; i++ ) {
+                new Splide( elms[ i ], options ).mount();
+            }
+       </script>
         <script>
             AOS.init();
         </script>
