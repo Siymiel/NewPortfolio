@@ -22,7 +22,7 @@
             </div>
         </div>
         {{-- icon-1 --}}
-        <div class="mt-28 flex justify-center">
+        <div class="mt-20 flex justify-center">
             <a class="smooth-scroll" href="#about">
                 <svg class="fill-current text-red-600 hover:text-gray-900 w-7 h-7 animate-pulse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M12.505 8.698L10 11 7.494 8.698a.512.512 0 00-.718 0 .5.5 0 000 .71l2.864 2.807a.51.51 0 00.717 0l2.864-2.807a.498.498 0 000-.71.51.51 0 00-.716 0zM10 .4A9.6 9.6 0 00.4 10c0 5.303 4.298 9.6 9.6 9.6s9.6-4.297 9.6-9.6A9.6 9.6 0 0010 .4zm0 17.954c-4.615 0-8.354-3.74-8.354-8.354S5.385 1.646 10 1.646a8.354 8.354 0 010 16.708z"/>
@@ -43,11 +43,11 @@
             </div>
             <div class="px-5">
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize tracking-wider leading-relaxed mt-3 text-gray-200">About <span class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">me<span></h1>
-                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-400">I am professional web designer and developer. I build and replicate front-end layouts and back-end services ( APIs ). My tool kits include: HTML, CSS ( Tailwind, Bootstrap ), JavaScript ( React, Node, Express ), Livewire and Laravel ( PHP ) and Git.</p>
+                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-400">I am a software developer. I build and replicate front-end layouts and develop back-end services ( APIs ). My tool kits include: HTML, CSS ( Tailwind, Bootstrap ), JavaScript ( React, Node, Express ), Livewire and Laravel ( PHP ) Git etc.</p>
                     <p class="text-base md:text-lg font-semibold mt-5 text-gray-400">I'm also the co-founder of <span class="text-gray-300"><a class="hover:text-red-400" href="https://snobole.com" target="_blank">Snobole Software</a></span> where I've worked as a technical lead since Oct. 2020.</p>
-                    <a href="{{route('contact')}}">
+                    <a href="https://www.linkedin.com/in/samuel-kinuthia/" target="_blank">
                         <p class="text-base md:text-lg hover:text-gray-300 text-red-400 font-semibold mb-5 mt-5 border-b-2 border-red-400">
-                            Hire me! --->
+                            More! --->
                         </p>
                     </a>
             </div>
@@ -69,10 +69,12 @@
             <ul class="splide__list">
                 @foreach($services as $service)
                     <li class="splide__slide">
-                        <div class="relative max-w-md md:max-w-2xl h-64 lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center border-2 border-gray-400" style="background-image: url('https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')">
-                        <div class="absolute inset-0 bg-gray-200 opacity-75"></div>
-                        <h2 class="text-red-500 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold z-10">{{$service->title}}</h2>
-                        <p class="mt-2 text-gray-900 relative font-semibold mb-2">{{$service->caption}}</p>
+                        <div class="relative max-w-md md:max-w-2xl h-48 lg:max-w-3xl xl:max-w-5xl mx-auto py-10 px-8 shadow-lg rounded-lg bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')">
+                        <div class="absolute inset-0 bg-gray-800 opacity-80"></div>
+                        <div class="grid items-centerx">
+                            <h2 class="text-red-400 relative text-2xl mt-2 md:mt-0 md:text-3xl font-semibold z-10">{{$service->title}}</h2>
+                        </div>
+                        <p class="mt-2 text-gray-300 relative font-semibold mb-2 text-xs">{{$service->caption}}</p>
                         </div>
                     </li>
                 @endforeach
@@ -139,18 +141,6 @@
                 @endforeach
             </ul>
         </div>
-        {{-- @foreach($clients as $client)
-        <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-200 border-2 border-gray-400">
-            <div class="flex justify-center sm:justify-end -mt-14">
-                <img class="w-20 h-20 object-cover object-center rounded-full border-2 border-red-400" alt="Client's avatar" src="{{$client->image_link}}">
-            </div>
-    
-            <h2 class="text-gray-800 text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$client->title}}</h2>
-    
-            <p class="mt-2 mb-1 text-gray-500 font-semibold">{{$client->body}}</p>
-        </div>
-        @endforeach --}}
-
     </section>
 
     {{-- icon-2 --}}
