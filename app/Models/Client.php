@@ -25,6 +25,7 @@ class Client extends SingleImage implements WithSlug
     protected $fillable = [
         'title',
         'slug',
+        'position',
         'body',
         'active',
     ];

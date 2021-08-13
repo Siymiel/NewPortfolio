@@ -47,6 +47,23 @@
                     </div>
 
 
+                    {{-- Position --}}
+                    <div class="mt-8">
+                        @error('position')
+                            <span class="text-red-500 mt-2 text-xs font-mono">
+                                * {{$message}}
+                            </span>
+                        @enderror
+                        <x-label for="position">
+                            <p class="font-semibold text-base leading-5 tracking-wider mb-2">Position</p>
+                            <div>
+                                <textarea id="position" rows="1" name="position" class="tiny-editor @error('position') border-red-500 @enderror form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">{{old('position', $client->position)}}</textarea>
+                            </div>
+                        </x-label>
+                    </div>
+
+
+
                     {{-- Client Image --}}
                     <div class="mt-8">
                         <x-label for="image">

@@ -134,6 +134,7 @@
                             </div>
                     
                             <h2 class="text-gray-800 text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$client->title}}</h2>
+                            {{-- <span></span> --}}
                     
                             <p class="mt-2 mb-1 text-gray-500 font-semibold">{{$client->body}}</p>
                         </div>

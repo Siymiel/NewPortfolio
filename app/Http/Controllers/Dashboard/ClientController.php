@@ -18,6 +18,7 @@ class ClientController extends Controller
         return view('dashboard.clients.index', [
             'columns' => [
                 'title' => 'text',
+                'position' => 'text',
                 'body' => 'text',
                 'active' => 'string',
             ],
@@ -46,6 +47,7 @@ class ClientController extends Controller
         $this->validateRequest($request);
         $data = $request->only([
             'title',
+            'position',
             'body',
             'active',
         ]);
@@ -95,6 +97,7 @@ class ClientController extends Controller
 
         $client->title = $request->input('title');
         $client->slug = $client->title;
+        $client->position = $request->input('position');
         $client->body = $request->input('body');
         $client->active = $request->input('active');
 
@@ -129,6 +132,7 @@ class ClientController extends Controller
     {
         return request()->validate([
             'title' => 'required|string|max:191',
+            'position' => 'required|string|max:191',
             'body' => 'required|string',
             'active' => 'required',
         ]);

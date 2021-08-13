@@ -17,6 +17,7 @@ class CreateClientsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug');
+            $table->string('position');
             $table->string('body');
             $table->boolean('active');
             $table->timestamps();
