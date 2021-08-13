@@ -18,25 +18,43 @@ class ServiceSeeder extends Seeder
             [
                 'title' => ($title = 'Web Design'),
                 'slug' => $title,
-                'caption' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.',
+                'caption' => 'UI | UX',
                 'active' => 1,
             ],
             [
                 'title' => ($title = 'Web Development'),
                 'slug' => $title,
-                'caption' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.',
+                'caption' => 'Custom development',
                 'active' => 1,
             ],
             [
                 'title' => ($title = 'Mpesa Intergration'),
                 'slug' => $title,
-                'caption' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.',
+                'caption' => 'C2B | B2B | B2C',
                 'active' => 1,
             ],
             [
                 'title' => ($title = 'SEO'),
                 'slug' => $title,
-                'caption' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos iure vel, dolore doloribus quaerat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia explicabo labore saepe dolores, aut nam.',
+                'caption' => 'SERPs | Keywords | Backlinks',
+                'active' => 1,
+            ],
+            [
+                'title' => ($title = 'Website Maintainance'),
+                'slug' => $title,
+                'caption' => 'Performance | Updates | Backup restoration',
+                'active' => 1,
+            ],
+            [
+                'title' => ($title = 'Google Analytics'),
+                'slug' => $title,
+                'caption' => 'Funnels | Metrics',
+                'active' => 1,
+            ],
+            [
+                'title' => ($title = 'WordPress'),
+                'slug' => $title,
+                'caption' => 'Custom Theme development | Landing Pages',
                 'active' => 1,
             ]
         ];
