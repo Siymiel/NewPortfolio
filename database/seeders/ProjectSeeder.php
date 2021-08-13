@@ -19,7 +19,7 @@ class ProjectSeeder extends Seeder
             [
                 'title' => ($title = 'Sahl Health'),
                 'slug' => $title,
-                'body' => 'Sahl Health is a Kenyan-based digital health innovation startup founded in the year 2019.The clients wanted a digital ecosystem that improves access and convenience to medical care, builds trust between patients and health service providers enabling predictable, competitive medical costs allowing patients to have a variety of spending options including medical price bidding.',
+                'body' => 'Sahl Health is a Kenyan-based digital health innovation startup founded in the year 2019.The client wanted a digital ecosystem that improves access and convenience to medical care, builds trust between patients and health service providers.',
                 'technology' => 'WordPress | Tailwind | SplideJs',
                 'link' => 'www.sahlhealth.com',
                 'active' => 1,
