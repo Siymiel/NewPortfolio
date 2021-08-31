@@ -17,7 +17,7 @@
                 @foreach($table_data as $data)
                     <tr class="text-gray-700">
                         @foreach($table_columns as $field_name => $field_type)
-                            <td class="px-4 py-3">
+                            <td>
                                 @switch($field_type)
                                     @case('string')
                                         <span class="font-semibold p-1 leading-tight rounded-full text-xs {{$data->$field_name ? 'text-green-700' : 'text-red-700'}} {{$data->$field_name ? 'bg-green-100' : 'bg-red-100'}}">
