@@ -44,10 +44,10 @@
             <div class="px-5">
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize tracking-wider leading-relaxed mt-3 text-gray-200">About <span class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">me<span></h1>
                     <p class="text-base md:text-lg font-semibold mt-5 text-gray-400">I am a software developer. I build and replicate front-end layouts and develop back-end services ( APIs ). My tool kits include: HTML, CSS ( Tailwind, Bootstrap ), JavaScript ( React, Node, Express ), Livewire and Laravel ( PHP ) Git etc.</p>
-                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-400">I'm also the co-founder of <span class="text-gray-300"><a class="hover:text-red-400" href="https://snobole.com" target="_blank">Snobole Software</a></span> where I've worked as a technical lead since Oct. 2020.</p>
+                    <p class="text-base md:text-lg font-semibold mt-5 text-gray-400">I'm also the co-founder of <span class="text-gray-300"><a class="hover:text-red-400" href="https://snobole.com" target="_blank">Snobole Software</a></span> where I've worked as a front-end developer and as a technical lead since Oct. 2020.</p>
                     <a href="https://www.linkedin.com/in/samuel-kinuthia/" target="_blank">
                         <p class="text-base md:text-lg hover:text-gray-300 text-red-400 font-semibold mb-5 mt-5 border-b-2 border-red-400">
-                            More! --->
+                            Linkedin profile ! --->
                         </p>
                     </a>
             </div>
@@ -82,6 +82,30 @@
         </div>
     </div>
 
+    {{-- Technologies --}}
+    <section class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-36">
+        <div class="flex justify-between">
+            <div>
+                <p class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl tracking-wide font-semibold leading-relaxed">My <span class="text-3xl sm:text-4xl lg:text-5xl">Stack<span></p>
+            </div>
+        </div>
+    </section>
+    <div class="grid gap-6 grid-cols-5 grid-flow justify-evenly mt-10 max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">         
+       <x-site.stackbtn class="bg-indigo-600" stack="AWS"/>
+       <x-site.stackbtn class="bg-red-600" stack="Vue"/>
+       <x-site.stackbtn class="bg-yellow-600" stack="WordPress"/>
+       <x-site.stackbtn class="bg-pink-600" stack="Hubspot"/>
+       <x-site.stackbtn class="bg-green-600" stack="Ruby on Rails"/>
+       <x-site.stackbtn class="bg-blue-600" stack="MVC"/>
+       <x-site.stackbtn class="bg-indigo-600" stack="Agile-Scrum"/>
+       <x-site.stackbtn class="bg-indigo-600" stack="Woo-Commerce"/>
+       <x-site.stackbtn class="bg-purple-600" stack="Jira"/>
+       <x-site.stackbtn class="bg-teal-600" stack="Click Up"/>
+       <x-site.stackbtn class="bg-cyan-600" stack="Git"/>
+       <x-site.stackbtn class="bg-rose-600" stack="GitHub / GitLab"/>
+       <x-site.stackbtn class="bg-emerald-600" stack="Apache / Nginx"/>     
+    </div>
+
     {{-- Projects --}}
     <section id="projects" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-36">
         <div class="flex justify-between">
@@ -96,17 +120,17 @@
     <section>
         <article class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 max-w-6xl mx-auto">
             @foreach($projects as $project)
-                <div class="bg-white max-w-md mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-5xl xl:max-w-6xl shadow-lg">
-                    <div class="border border-solid border-gray-800">
+                <div class="bg-white max-w-md mx-auto md:max-w-3xl sm:max-w-lg lg:max-w-5xl xl:max-w-6xl shadow-lg border border-gray-300">
+                    <div>
                         <div class="w-full h-56 bg-cover bg-top" style="background-image:url('{{$project->image_link}}')"></div>
                     </div>
         
-                    <div class="py-5 px-5 max-w-xl sm:max-w-lg md:max-w-3xl lg:max-w-6xl bg-gray-900">
-                        <h2 class="text-2xl text-gray-300 font-bold md:text-3xl">{{$project->title}}</h2>
-                        <p class="mt-3 text-gray-500 font-semibold">{{$project->body}}</p>
-                        <p class="mt-2 text-red-400 font-semibold">{{$project->technology}}</p>
+                    <div class="py-5 px-5 max-w-xl sm:max-w-lg md:max-w-3xl lg:max-w-6xl bg-gray-100">
+                        <h2 class="text-2xl font-bold md:text-3xl">{{$project->title}}</h2>
+                        <p class="mt-3 font-semibold">{{$project->body}}</p>
+                        <p class="mt-2 text-red-400 font-semibold"><span class="text-gray-900">Stack:</span> {{$project->technology}}</p>
                         <div class="mt-5">
-                            <a href="{{$project->link}}" target="_blank" class="border-2 border-gray-500 text-gray-500 px-4 py-2 font-semibold rounded hover:text-gray-300 hover:bg-gray-800">Visit Site</a>
+                            <a href="{{$project->link}}" target="_blank" class="border-2 border-gray-500 px-4 py-2 font-semibold rounded hover:text-gray-300 hover:bg-gray-800">Visit Site</a>
                         </div>
                     </div>
                 </div>
@@ -128,15 +152,12 @@
             <ul class="splide__list">
                 @foreach($clients as $client)
                     <li class="splide__slide">
-                        <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-200 border-2 border-gray-400">
+                        <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto py-4 px-8 shadow-lg rounded-lg mt-16 bg-gray-100 border-2 border-gray-400">
                             <div class="flex justify-center sm:justify-end -mt-14">
                                 <img class="w-20 h-20 object-cover object-center rounded-full border-2 border-red-400" alt="Client's avatar" src="{{$client->image_link}}">
                             </div>
-                    
-                            <h2 class="text-gray-800 text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$client->title}}</h2>
-                            {{-- <span></span> --}}
-                    
-                            <p class="mt-2 mb-1 text-gray-500 font-semibold">{{$client->body}}</p>
+                            <h2 class="text-gray-900 text-2xl mt-2 md:mt-0 md:text-3xl font-semibold">{{$client->title}}</h2>
+                            <p class="mt-2 mb-1 text-gray-800 font-semibold">{{$client->body}}</p>
                         </div>
                     </li>
                 @endforeach
@@ -158,9 +179,32 @@
             " Our greatest fear should not be of failure, but of succeeding at things in life that don't really matter. "
         </p>
     </div>
-
     <div class="max-w-sm sm:max-w-md md:max-w-xl mx-auto flex italic">
         <p class="text-base md:text-xl text-gray-400 font-medium">--Anonymous--</p>
     </div>
+
+    {{-- CTA --}}
+    <div class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">
+        <section class="flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg md:flex-row md:h-48 mt-20 border border-gray-600">
+        <div class="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700">
+            <div class="px-6 py-6 md:px-8 md:py-0">
+                <h2 class="text-lg font-bold text-gray-700 md:text-gray-100">Contact me For <span class="text-red-400">Project</span> Development</h2>
+                
+                <p class="mt-2 text-sm text-gray-600 md:text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur obcaecati odio</p>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2">
+            <form>
+                <div class="flex flex-col overflow-hidden border rounded-lg lg:flex-row">
+                    <input class="px-6 py-3 text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent" type="text" name="email" placeholder="Enter your email" aria-label="Enter your email">
+                    
+                    <button class="px-4 py-3 text-xs font-medium tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-gray-700 hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">Reach out</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    </div>
+
     <x-site.footer/>
 </x-site-layout>
