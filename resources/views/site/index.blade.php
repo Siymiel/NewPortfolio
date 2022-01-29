@@ -32,14 +32,17 @@
     </section>
 
 
-
+  {{-- <img class="w-full object-cover object-center" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">  --}}
+                {{-- <x-application-sam/>    --}}
     {{-- About me --}}
      <section class="w-full mx-auto bg-gray-900">
         <section id="about" class="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto mt-32 pt-5 pb-5">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-             <div class="flex justify-center py-5">
-                 <img class="w-full object-cover object-center" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"> 
-                {{-- <x-application-sam/>    --}}
+             <div class="flex justify-center px-3 lg:px-0">
+                <div class="w-full h-80" style="overflow: hidden;">
+                    <iframe class="w-full h-full object-cover object-center" src="https://share.synthesia.io/embeds/videos/6d005cc1-433d-4f1c-94ec-a3b7903e6da3" loading="lazy" title="Samuel Kinuthia - About me" allow="encrypted-media; fullscreen;" style="top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;">
+                    </iframe>
+                </div>
             </div>
             <div class="px-5">
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold capitalize tracking-wider leading-relaxed mt-3 text-gray-200">About <span class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl">me<span></h1>
